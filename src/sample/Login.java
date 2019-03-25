@@ -65,7 +65,7 @@ public class Login implements Initializable{
                 role = rs.getInt("role");
                 if(validPassword.equals(password_PText.getText()) && role == 1){
                     Parent managerMenu = FXMLLoader.load(getClass().getResource("ManagerMenu.fxml"));
-                    Scene managerScene = new Scene(managerMenu, 420, 280);
+                    Scene managerScene = new Scene(managerMenu, 515, 363);
                     Stage managerStage = (Stage)((Node)event.getSource()).getScene().getWindow();
                     managerStage.setScene(managerScene);
                     managerStage.show();

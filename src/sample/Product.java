@@ -6,13 +6,13 @@ public class Product {
     private String productName;
     private String productDesc;
     private String quantityProd;
-    private Date prodDate;
+    private Date productDate;
 
-    public Product(String productName, String productDesc, String quantityProd, Date prodDate) {
+    public Product(String productName, String productDesc, String quantityProd, Date productDate) {
         this.productName = productName;
         this.productDesc = productDesc;
         this.quantityProd = quantityProd;
-        this.prodDate = prodDate;
+        this.productDate = productDate;
     }
 
     public String getProductName() {
@@ -39,11 +39,11 @@ public class Product {
         this.quantityProd = quantityProd;
     }
 
-    public Date getProdDate() {
-        return prodDate;
+    public Date getProductDate() {
+        return productDate;
     }
 
-    public void setProdDate(Date prodDate) {
-        this.prodDate = prodDate;
+    public void setProductDate(Date productDate) {
+        this.productDate = productDate;
     }
 }
