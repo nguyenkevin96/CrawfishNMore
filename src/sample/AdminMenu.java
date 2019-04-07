@@ -15,7 +15,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
-public class ManagerMenu implements Initializable {
+public class AdminMenu implements Initializable {
     private ResultSet rs = null;
     private PreparedStatement pst = null;
     private Connection conn = null;

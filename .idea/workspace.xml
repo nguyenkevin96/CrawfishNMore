@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sample/editProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Updated SQl Script">
+      <change afterPath="$PROJECT_DIR$/src/DatabaseFiller.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4a847d4e-822d-4752-9c56-8903371c8eec.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/DbConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/DbConnection.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/EmployeeManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/EmployeeManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/InventoryManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/InventoryManagement.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/InventoryManagement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/InventoryManagement.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CrawfishNMore/window/editProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CrawfishNMore/window/editProduct.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/DbConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/EmployeeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/EmployeeManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/InventoryManagement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/InventoryManagement.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/InventoryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/InventoryManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/window/editProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/editProduct.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/window/editProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ManagerMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/AdminMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ManagerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/AdminMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/editProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/editProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/login.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,24 +47,6 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="Crawfish" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Crawfish" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Crawfish" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="crawfish: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Crawfish" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="crawfish: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="product: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -117,29 +100,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/login.fxml">
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://af5e77eb-7ec3-4fd4-8f78-93adf69a4f1d/schema/crawfish/table/product">
+        <entry file="das://af5e77eb-7ec3-4fd4-8f78-93adf69a4f1d/schema/crawfish/table/login">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -148,59 +109,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ManagerMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ManagerMenu.fxml">
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/InventoryManagement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="84" column="30" lean-forward="true" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2419#2420#0" expanded="true" />
-                <element signature="e#2457#2458#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/InventoryManagement.fxml">
           <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/DbConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="442">
+              <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -208,7 +121,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Employee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="68">
               <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
               <folding>
                 <element signature="e#540#541#0" expanded="true" />
@@ -237,13 +150,74 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/editProduct.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor">
+            <state>
+              <caret column="38" selection-start-column="38" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/EmployeeManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-411">
-              <caret line="89" column="46" lean-forward="true" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
+            <state relative-caret-position="119">
+              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/AdminMenu.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DatabaseFiller.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/EmployeeManager_Manager.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="153" selection-start-line="10" selection-start-column="153" selection-end-line="10" selection-end-column="153" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/DbConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/login.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -259,6 +233,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getDate</find>
+    </findStrings>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
@@ -273,12 +252,10 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1042083a-31f5-42a4-8174-bce0b687b00c/console.sql" />
         <option value="$PROJECT_DIR$/src/sample/DatabaseConnection.java" />
         <option value="$PROJECT_DIR$/src/sample/Connection.java" />
-        <option value="$PROJECT_DIR$/src/sample/DbConnection.java" />
         <option value="$PROJECT_DIR$/src/sample/Menu.java" />
         <option value="$PROJECT_DIR$/src/sample/Manager.java" />
         <option value="$PROJECT_DIR$/src/sample/Inventory_Manager.fxml" />
         <option value="$PROJECT_DIR$/src/sample/InventoryManager.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/login.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/Employee.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
@@ -287,17 +264,21 @@
         <option value="$PROJECT_DIR$/src/window/something.fxml" />
         <option value="$PROJECT_DIR$/src/sample/ManagerMenu.java" />
         <option value="$PROJECT_DIR$/src/sample/EmployeeManager_Manager.fxml" />
-        <option value="af5e77eb-7ec3-4fd4-8f78-93adf69a4f1d/schema/crawfish/table/product.sql" />
-        <option value="$PROJECT_DIR$/src/sample/ManagerMenu.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/EmployeeManager.java" />
-        <option value="$PROJECT_DIR$/src/sample/Login.java" />
         <option value="$PROJECT_DIR$/src/window/editProduct.java" />
         <option value="$PROJECT_DIR$/src/window/editProduct.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Product.java" />
         <option value="$PROJECT_DIR$/src/sample/editProduct.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/editProduct.java" />
+        <option value="$PROJECT_DIR$/src/sample/ManagerMenu.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/login.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/DbConnection.java" />
+        <option value="$PROJECT_DIR$/src/sample/Login.java" />
         <option value="$PROJECT_DIR$/src/sample/InventoryManagement.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/editProduct.java" />
         <option value="$PROJECT_DIR$/src/sample/InventoryManagement.java" />
+        <option value="af5e77eb-7ec3-4fd4-8f78-93adf69a4f1d/schema/crawfish/table/product.sql" />
+        <option value="$PROJECT_DIR$/src/sample/EmployeeManager.java" />
+        <option value="$PROJECT_DIR$/src/sample/AdminMenu.fxml" />
+        <option value="$PROJECT_DIR$/src/DatabaseFiller.sql" />
       </list>
     </option>
   </component>
@@ -323,8 +304,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -337,16 +316,12 @@
               <item name="CrawfishNMore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CrawfishNMore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CrawfishNMore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -360,16 +335,16 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553495551963" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554662124265" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../semester-project-nguyenkevin961" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../semester-project-nguyenkevin96" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -477,48 +452,72 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1553290458720" duration="9490000" />
-      <workItem from="1553361778346" duration="56206000" />
+      <workItem from="1553361778346" duration="58066000" />
+      <workItem from="1553543302427" duration="662000" />
+      <workItem from="1553544620655" duration="9494000" />
+      <workItem from="1553634779680" duration="1227000" />
+      <workItem from="1553890349006" duration="2138000" />
+      <workItem from="1553920056690" duration="17000" />
+      <workItem from="1553922399237" duration="3511000" />
+      <workItem from="1553928062063" duration="3000" />
+      <workItem from="1553928409286" duration="599000" />
+      <workItem from="1553960777542" duration="18000" />
+      <workItem from="1553960814569" duration="15000" />
+      <workItem from="1553960835220" duration="3228000" />
+      <workItem from="1553983459793" duration="706000" />
+      <workItem from="1554083353391" duration="4391000" />
+      <workItem from="1554173574375" duration="599000" />
+      <workItem from="1554655660393" duration="2194000" />
+      <workItem from="1554659190368" duration="2982000" />
     </task>
+    <task id="LOCAL-00001" summary="Completed edit(right-click) and Add Product for Inventory.&#10;Added refresh button Inventory">
+      <created>1553495800836</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553495800837</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66998000" />
+    <option name="totallyTimeSpent" value="100642000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1873" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="351" y="0" width="1117" height="1087" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.12851627" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.1807001" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="SQL Generator" order="0" weight="0.32917964" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.3281412" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.35306334" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Application Servers" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32917964" />
-      <window_info anchor="bottom" id="Problems" order="10" />
-      <window_info anchor="bottom" id="Changes" order="11" />
-      <window_info anchor="bottom" id="Profiler" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="13" weight="0.3271028" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.3281412" />
-      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32917964" />
-      <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="17" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="18" weight="0.32974428" />
+      <window_info anchor="bottom" id="Floobits" order="0" weight="0.32917964" />
+      <window_info anchor="bottom" id="SQL Generator" order="1" weight="0.32917964" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.3281412" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.17237799" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Application Servers" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32917964" />
+      <window_info anchor="bottom" id="Problems" order="11" />
+      <window_info anchor="bottom" id="Changes" order="12" />
+      <window_info anchor="bottom" id="Profiler" order="13" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="14" visible="true" weight="0.32704404" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.3281412" />
+      <window_info anchor="bottom" id="Database Console" order="16" weight="0.32917964" />
+      <window_info anchor="bottom" id="Docker" order="17" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="18" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="19" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.2498621" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="JetGradle" order="3" />
-      <window_info anchor="right" id="Database" order="4" sideWeight="0.498452" visible="true" weight="0.22228351" />
+      <window_info anchor="right" id="Database" order="4" sideWeight="0.498452" weight="0.3968254" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="right" id="Maven" order="7" weight="0.32984003" />
@@ -534,6 +533,9 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <MESSAGE value="Completed edit(right-click) and Add Product for Inventory.&#10;Added refresh button Inventory" />
+    <MESSAGE value="Updated SQl Script" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated SQl Script" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -555,20 +557,8 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Connection.java" />
-    <entry file="das://4a847d4e-822d-4752-9c56-8903371c8eec/database/CRAWFISHDATABASE/schema/PUBLIC/table/LOGIN.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4a847d4e-822d-4752-9c56-8903371c8eec/database/CRAWFISHDATABASE/schema/PUBLIC/table/LOGIN">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://4a847d4e-822d-4752-9c56-8903371c8eec/database/CRAWFISHDATABASE/schema/PUBLIC/table/LOGIN.sql" />
+    <entry file="das://4a847d4e-822d-4752-9c56-8903371c8eec/database/CRAWFISHDATABASE/schema/PUBLIC/table/LOGIN" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4a847d4e-822d-4752-9c56-8903371c8eec/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -578,110 +568,16 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/af5e77eb-7ec3-4fd4-8f78-93adf69a4f1d/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/InventoryManager.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/InventoryManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://af5e77eb-7ec3-4fd4-8f78-93adf69a4f1d/schema/crawfish/table/login">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FXML Windows/Something">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FXML Windows/Something.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://af5e77eb-7ec3-4fd4-8f78-93adf69a4f1d/schema/crawfish/table/product.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="127" lean-forward="true" selection-start-line="12" selection-start-column="127" selection-end-line="12" selection-end-column="127" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Menu.java" />
+    <entry file="file://$PROJECT_DIR$/src/sample/InventoryManager.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/sample/InventoryManager.java" />
+    <entry file="file://$PROJECT_DIR$/src/sample/Manager.java" />
+    <entry file="file://$PROJECT_DIR$/FXML Windows/Something" />
+    <entry file="file://$PROJECT_DIR$/FXML Windows/Something.fxml" />
     <entry file="file://$PROJECT_DIR$/src/sample/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/editProduct.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state>
-          <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/editProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="53" column="67" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2201#2202#0" expanded="true" />
-            <element signature="e#2235#2236#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/EmployeeManager_Manager.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="153" selection-start-line="10" selection-start-column="153" selection-end-line="10" selection-end-column="153" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/login.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -695,19 +591,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/DbConnection.java">
+    <entry file="das://af5e77eb-7ec3-4fd4-8f78-93adf69a4f1d/schema/crawfish/table/product" />
+    <entry file="file://$PROJECT_DIR$/src/sample/AdminMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+        <state relative-caret-position="68">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/SQLScripts/sql.java" />
+    <entry file="file://$PROJECT_DIR$/src/sample/editProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af5e77eb-7ec3-4fd4-8f78-93adf69a4f1d/schema/crawfish/table/login.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="2" selection-start-line="1" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af5e77eb-7ec3-4fd4-8f78-93adf69a4f1d/schema/crawfish/table/product.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/InventoryManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af5e77eb-7ec3-4fd4-8f78-93adf69a4f1d/schema/crawfish/table/login">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/InventoryManagement.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="68">
           <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
           <folding>
             <element signature="e#540#541#0" expanded="true" />
@@ -734,34 +689,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/editProduct.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/EmployeeManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-411">
-          <caret line="89" column="46" lean-forward="true" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
+        <state relative-caret-position="119">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://af5e77eb-7ec3-4fd4-8f78-93adf69a4f1d/schema/crawfish/table/product">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ManagerMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ManagerMenu.fxml">
+    <entry file="file://$PROJECT_DIR$/src/sample/AdminMenu.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -769,23 +715,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/InventoryManagement.fxml">
+    <entry file="file://$PROJECT_DIR$/src/sample/EmployeeManager_Manager.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
+        <state relative-caret-position="170">
+          <caret line="10" column="153" selection-start-line="10" selection-start-column="153" selection-end-line="10" selection-end-column="153" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/InventoryManagement.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/DbConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="84" column="30" lean-forward="true" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2419#2420#0" expanded="true" />
-            <element signature="e#2457#2458#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/login.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DatabaseFiller.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
         </state>
       </provider>
     </entry>

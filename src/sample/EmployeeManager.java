@@ -134,8 +134,8 @@ public class EmployeeManager implements Initializable {
 
     @FXML
     private void handleBack(ActionEvent event) throws IOException {
-        Parent back = FXMLLoader.load(getClass().getResource("ManagerMenu.fxml"));
-        Scene backScene = new Scene(back, 420, 280);
+        Parent back = FXMLLoader.load(getClass().getResource("AdminMenu.fxml"));
+        Scene backScene = new Scene(back, 915, 525);
         Stage backStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         backStage.setScene(backScene);
         backStage.show();

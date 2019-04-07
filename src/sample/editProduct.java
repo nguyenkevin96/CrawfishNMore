@@ -9,13 +9,11 @@ import javafx.scene.control.TextField;
 
 import java.net.URL;
 import java.sql.*;
-import java.time.LocalDate;
 import java.util.ResourceBundle;
 
 public class editProduct implements Initializable {
     private String prodName, prodQuantity, prodDesc;
     private Date prodDate;
-
     Connection conn = null;
     ResultSet rs = null;
     PreparedStatement pst = null;
@@ -51,11 +49,13 @@ public class editProduct implements Initializable {
 
     @FXML
     private void handleEditProduct(){
-        java.sql.Date getDate = java.sql.Date.valueOf(productDate_Text.getValue());
+        Date getDate = Date.valueOf(productDate_Text.getValue());
         try{
-            pst = conn.prepareStatement("UPDATE product SET product_desc = ? WHERE product_name = ?");
-            pst.setString(1, productDesc_TextA.getText());
-            pst.setString(2, productName_Text.getText());
+            pst = conn.prepareStatement("UPDATE product SET quantity = ?, productDate = ?, product_desc = ? WHERE product_name = ?");
+            pst.setString(1, productQuantity_Text.getText());
+            pst.setDate(2, getDate);
+            pst.setString(3, productDesc_TextA.getText());
+            pst.setString(4, productName_Text.getText());
             pst.executeUpdate();
         } catch (SQLException ex){
 

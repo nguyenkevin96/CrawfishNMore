@@ -29,7 +29,7 @@ public class InventoryManagement implements Initializable {
     private TableView<Product> productList;
     @FXML
     private TableColumn<?, ?> productname_Column, productdesc_Column,
-                            productquantity_Column;
+            productquantity_Column;
     @FXML
     private TableColumn<Product, Date> productdate_Column;
     @FXML

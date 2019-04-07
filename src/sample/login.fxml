@@ -37,6 +37,7 @@
                </image>
             </ImageView>
             <Label fx:id="incorrectLogin_Label" layoutX="119.0" layoutY="132.0" text="Username or password is incorrect" textFill="RED" visible="false" />
+            <Label fx:id="usernameDNE" layoutX="145.0" layoutY="132.0" text="Username does not exist" textFill="RED" visible="false" />
          </children></AnchorPane>
    </children>
 </GridPane>
