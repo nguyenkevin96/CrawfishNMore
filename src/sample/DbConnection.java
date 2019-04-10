@@ -10,7 +10,7 @@ public class DbConnection {
     public static Connection dbConnection(){
         Connection conn = null;
         try{
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/crawfish", "root", "root");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/crawfish", "root", "Sfn8tjpansv!");
         } catch (SQLException ex){
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setContentText("Connection Failed");

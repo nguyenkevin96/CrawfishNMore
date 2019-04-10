@@ -26,14 +26,14 @@
             <Button fx:id="login_Button" layoutX="187.0" layoutY="218.0" mnemonicParsing="false" onAction="#loginClicked" text="Login" />
             <ImageView fitHeight="111.0" fitWidth="124.0" layoutX="155.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="file:/C:/Users/nguye/Desktop/School%20Related/3368%20Advanced%20Java/CrawfishNMore/Logo/Crawfish%20logo.png" />
+                  <Image url="/sample/logo/Crawfishlogo.png" />
                </image>
             </ImageView>
             <Label fx:id="user_Label" layoutX="80.0" layoutY="153.0" text="User:" />
             <Label fx:id="password_Label" layoutX="80.0" layoutY="185.0" text="Password:" />
             <ImageView fitHeight="35.0" fitWidth="73.0" layoutX="7.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="file:/C:/Users/nguye/Desktop/School%20Related/3368%20Advanced%20Java/CrawfishNMore/Logo/Consulting%20Logo.jpg" />
+                  <Image url="/sample/logo/Crawfishlogo.png" />
                </image>
             </ImageView>
             <Label fx:id="incorrectLogin_Label" layoutX="119.0" layoutY="132.0" text="Username or password is incorrect" textFill="RED" visible="false" />

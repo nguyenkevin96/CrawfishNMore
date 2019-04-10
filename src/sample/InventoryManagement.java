@@ -22,22 +22,13 @@ public class InventoryManagement implements Initializable {
     Connection conn = null;
     PreparedStatement pst = null;
     ResultSet rs = null;
-    ObservableList<Product> data;
+    ObservableList<Inventory> data;
 
 
     @FXML
-    private TableView<Product> productList;
-    @FXML
-    private TableColumn<?, ?> productname_Column, productdesc_Column,
-            productquantity_Column;
-    @FXML
-    private TableColumn<Product, Date> productdate_Column;
-    @FXML
-    private TextField productname_Text, productquantity_Text;
-    @FXML
-    private DatePicker productdate_Date;
-    @FXML
-    private TextArea productdesc_TextA;
+    private TableView<Inventory> productList;
+
+    public  TableColumn<?, ?> productname_Column, productid_Column, currentProd_Column, requiredProd_Column;
 
     @Override
     public void initialize(URL url, ResourceBundle rB){
@@ -50,31 +41,32 @@ public class InventoryManagement implements Initializable {
 
     private void setCellValue(){
         productname_Column.setCellValueFactory(new PropertyValueFactory<>("productName"));
-        productdesc_Column.setCellValueFactory(new PropertyValueFactory<>("productDesc"));
-        productquantity_Column.setCellValueFactory(new PropertyValueFactory<>("quantityProd"));
-        productdate_Column.setCellValueFactory(new PropertyValueFactory<>("productDate"));
+        currentProd_Column.setCellValueFactory(new PropertyValueFactory<>("currentProd"));
+        requiredProd_Column.setCellValueFactory(new PropertyValueFactory<>("requiredProd"));
     }
 
     private void loadDataFromDatabase(){
         data.clear();
         try {
-            pst = conn.prepareStatement("SELECT * FROM product");
+            pst = conn.prepareStatement("SELECT product.productName, inventory.currentProdAmt, inventory.requiredProdAmt " +
+                    "FROM inventory " +
+                    "INNER JOIN product " +
+                    "ON inventory.product_id = product.product_id");
             rs = pst.executeQuery();
             while(rs.next()){
-                data.add(new Product(
-                        rs.getString("product_name"),
-                        rs.getString("product_desc"),
-                        rs.getString("quantity"),
-                        rs.getDate("productDate")
+                data.add(new Inventory(
+                        rs.getString("productName"),
+                        rs.getInt("currentProdAmt"),
+                        rs.getInt("requiredProdAmt")
                 ));
             }
         } catch (SQLException e) {
-            System.out.println("Product Error");
+            e.printStackTrace();
         }
         productList.setItems(data);
     }
 
-    @FXML
+    /*@FXML
     private void handleAddProduct(){
         Date date = Date.valueOf(productdate_Date.getValue());
         data.clear();
@@ -111,5 +103,5 @@ public class InventoryManagement implements Initializable {
         window.setTitle("Edit Employee");
         window.setScene(new Scene(parent));
         window.show();
-    }
+    }*/
 }

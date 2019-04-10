@@ -19,26 +19,21 @@ public class editProduct implements Initializable {
     PreparedStatement pst = null;
 
     @FXML
-    private TextField productName_Text, productQuantity_Text;
-    @FXML
-    private DatePicker productDate_Text;
-    @FXML
-    private TextArea productDesc_TextA;
+    private TextField productName_Text, currentProd_Text, requiredProd_Text;
 
-    public void addDataToController(Product product){
+    public void addDataToController(Inventory product){
         productName_Text.setText(product.getProductName());
-        productQuantity_Text.setText(product.getQuantityProd());
-        productDate_Text.setValue(product.getProductDate().toLocalDate());
-        productDesc_TextA.setText(product.getProductDesc());
+        currentProd_Text.setText(String.valueOf(product.getProductid()));
+        requiredProd_Text.setText(String.valueOf(product.getCurrentProd()));
     }
 
-    private boolean editProduct(ActionEvent event, Product product){
+/*    private boolean editProduct(ActionEvent event, Inventory inventory){
         try{
-            pst = conn.prepareStatement("UPDATE product SET quantity = ?, productDate = ?, product_desc = ? WHERE product_name = ?");
-            pst.setString(1, product.getProductName());
-            pst.setDate(2, product.getProductDate());
-            pst.setString(3, product.getProductDesc());
-            pst.setString(4, product.getProductName());
+            pst = conn.prepareStatement("");
+            pst.setString(1, inventory.getProductName());
+            pst.setDate(2, inventory.getProductDate());
+            pst.setString(3, inventory.getProductDesc());
+            pst.setString(4, inventory.getProductName());
             int i = pst.executeUpdate();
             return (i > 0);
         } catch (SQLException ex){
@@ -60,7 +55,7 @@ public class editProduct implements Initializable {
         } catch (SQLException ex){
 
         }
-    }
+    }*/
 
     @Override
     public void initialize(URL url, ResourceBundle rb){

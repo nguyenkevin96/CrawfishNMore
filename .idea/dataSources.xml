@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Crawfish" uuid="af5e77eb-7ec3-4fd4-8f78-93adf69a4f1d">
+    <data-source source="LOCAL" name="crawfish@localhost" uuid="924fac4a-890b-41bb-95a7-7df9ebe2f7a9">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
