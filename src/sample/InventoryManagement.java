@@ -14,7 +14,8 @@ public class InventoryManagement implements Initializable {
     Connection conn = null;
     PreparedStatement pst = null;
     ResultSet rs = null;
-    ObservableList<Inventory> data;
+
+    public ObservableList<Inventory> data;
 
 
     @FXML

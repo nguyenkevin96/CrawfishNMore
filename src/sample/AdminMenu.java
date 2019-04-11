@@ -45,7 +45,7 @@ public class AdminMenu implements Initializable {
         tempEmployee = new ArrayList<>();
         tempAdmin = new ArrayList<>();
         tempRecentRecieve = new ArrayList<>();
-//        addEmployeeListData();
+        addEmployeeListData();
 //        addAdminListData();
         addRecentReceivedData();
         loadLoginData();
@@ -60,13 +60,13 @@ public class AdminMenu implements Initializable {
         main.changeWindow(event, "EmployeeManager_Manager.fxml", 766, 396);
     }
 
-    /*private void addEmployeeListData(){
+    private void addEmployeeListData(){
         try{
-            String sql = "SELECT * FROM employee";
+            String sql = "SELECT staff.staff_id, staff.firstName, staff.lastName FROM staff";
             stmt = conn.createStatement();
             rs = stmt.executeQuery(sql);
             while(rs.next()){
-                String name = rs.getInt("employee_id") + "\t" + rs.getString("first_name") + " " + rs.getString("last_name");
+                String name = rs.getInt("staff_id") + "\t" + rs.getString("firstName") + " " + rs.getString("lastName");
                 tempEmployee.add(name);
             }
             currEmployeeList = FXCollections.observableArrayList(tempEmployee);
@@ -78,7 +78,7 @@ public class AdminMenu implements Initializable {
 
     private void addAdminListData(){
         try{
-            pst = conn.prepareStatement("SELECT * FROM admin");
+            pst = conn.prepareStatement("SELECT * FROM staff");
             rs = pst.executeQuery();
             while(rs.next()){
                 String name = rs.getString("firstName") + " " + rs.getString("lastName");
@@ -89,7 +89,7 @@ public class AdminMenu implements Initializable {
         } catch (SQLException ex){
             ex.printStackTrace();
         }
-    }*/
+    }
 
     private void loginSupplierTableViewCellData(){
         firstname_Column.setCellValueFactory(new PropertyValueFactory<>("firstname"));

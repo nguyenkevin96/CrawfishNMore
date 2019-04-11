@@ -104,8 +104,8 @@ CREATE TABLE menuItems
 (
   menuItem_id   INT          NOT NULL IDENTITY(1,1) PRIMARY KEY,
   menu_id       INT          NOT NULL,
-  menuItemName  VARCHAR(25)  NOT NULL,
-  menuItemPrice DECIMAL      NOT NULL,
+  menuItemName  VARCHAR(255)  NOT NULL,
+  menuItemPrice DECIMAL(4,2)      NOT NULL,
   menuItemDesc  VARCHAR(100) NOT NULL,
   FOREIGN KEY (menu_id) REFERENCES menu (menu_id)
 );
@@ -299,11 +299,38 @@ CREATE TABLE menuHistory
   FOREIGN KEY (menu_id) REFERENCES menu (menu_id)
 );*/
 
+INSERT INTO menu (menu_id, menuName) VALUES (1, 'Seasonal');
+INSERT INTO menu (menu_id, menuName) VALUES (2, 'Non-Seasonal');
+
 INSERT INTO permtype (perm_desc) VALUES ('Admin');
 INSERT INTO permtype (perm_desc) VALUES ('Manager');
 INSERT INTO permtype (perm_desc) VALUES ('Employee');
 
-INSERT INTO login (username, password) VALUES ('kevin', 'kevin');
+BULK INSERT crawfish.dbo.login
+  FROM 'C:\login.tsv'
+  WITH(
+  FIELDTERMINATOR = '\t',
+  ROWTERMINATOR = '\n',
+  FIRSTROW = 2
+  )
+
+BULK INSERT crawfish.dbo.menuItems
+    FROM 'C:\menu_item.tsv'
+    WITH(
+      FIELDTERMINATOR = '\t',
+      ROWTERMINATOR = '\n',
+      FIRSTROW = 2
+    )
+
+BULK INSERT crawfish.dbo.staff
+    FROM 'C:\staff.tsv'
+    WITH(
+      FIELDTERMINATOR = '\t',
+      ROWTERMINATOR = '\n',
+      FIRSTROW = 2
+  )
+
+/*INSERT INTO login (username, password) VALUES ('kevin', 'kevin');
 INSERT INTO staff (firstName, lastName, login_id, permtype_id)  VALUES ('Kevin', 'Nguyen', 1, 1)
 INSERT INTO login (username, password) VALUES ('fernando', 'fernando');
 INSERT INTO staff (firstName, lastName, login_id, permtype_id) VALUES ('Fernando', 'Yang', 2, 1);
@@ -316,7 +343,7 @@ INSERT INTO staff (firstName, lastName, login_id, permtype_id) VALUES ('Hue', 'L
 INSERT INTO login (username, password) VALUES ('marvin', 'marvin');
 INSERT INTO staff (firstName, lastName, login_id, permtype_id) VALUES ('Marvin', 'Ngo', 6, 3);
 
-/*INSERT INTO permtype (perm_desc, staff_id) VALUES ('Admin', 1)
+INSERT INTO permtype (perm_desc, staff_id) VALUES ('Admin', 1)
 INSERT INTO permtype (perm_desc, staff_id) VALUES ('Employee', 2)
 INSERT INTO permtype (perm_desc, staff_id) VALUES ('Manager', 3)
 

@@ -299,6 +299,8 @@ CREATE TABLE menuHistory
   FOREIGN KEY (menu_id) REFERENCES menu (menu_id)
 );*/
 
+
+
 INSERT INTO permtype (perm_desc) VALUES ('Employee');
 INSERT INTO permtype (perm_desc) VALUES ('Manager');
 INSERT INTO permtype (perm_desc) VALUES ('Admin');
