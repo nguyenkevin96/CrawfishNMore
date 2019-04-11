@@ -1,3 +1,4 @@
+/*
 package sample;
 
 import javafx.collections.FXCollections;
@@ -142,3 +143,4 @@ public class EmployeeManager implements Initializable {
         System.out.println("Returned to Manager Menu Screen");
     }
 }
+*/

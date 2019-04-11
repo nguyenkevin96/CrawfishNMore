@@ -6,12 +6,12 @@ public class Inventory {
     private int currentProd;
     private int requiredProd;
 
-    public Inventory (String productName, int productid, int currentProd, int requiredProd) {
+/*    public Inventory (String productName, int productid, int currentProd, int requiredProd) {
         this.productName = productName;
         this.productid = productid;
         this.currentProd = currentProd;
         this.requiredProd = requiredProd;
-    }
+    }*/
 
     public Inventory(String productName, int currentProd, int requiredProd) {
         this.productName = productName;

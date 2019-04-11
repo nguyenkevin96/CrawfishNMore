@@ -8,13 +8,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="525.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.InventoryManagement">
+<AnchorPane prefHeight="525.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.InventoryManagement">
    <children>
-      <TableView fx:id="productList" layoutX="14.0" layoutY="58.0" prefHeight="364.0" prefWidth="278.0">
+      <TableView fx:id="productList" layoutX="42.0" layoutY="90.0" prefHeight="422.0" prefWidth="315.0">
         <columns>
-          <TableColumn fx:id="productname_Column" prefWidth="97.99998474121094" text="Product Name" />
-            <TableColumn fx:id="currentProd_Column" prefWidth="92.0" text="Curr Amt" />
-            <TableColumn fx:id="requiredProd_Column" prefWidth="87.0" text="Req. Amt" />
+          <TableColumn fx:id="productname_Column" prefWidth="118.99998474121094" text="Product Name" />
+            <TableColumn fx:id="currentProd_Column" prefWidth="94.0" text="Curr Amt" />
+            <TableColumn fx:id="requiredProd_Column" prefWidth="101.0" text="Req. Amt" />
         </columns>
          <contextMenu>
             <ContextMenu>
@@ -25,7 +25,7 @@
             </ContextMenu>
          </contextMenu>
       </TableView>
-      <Label layoutX="378.0" prefHeight="53.0" prefWidth="160.0" text="Inventory">
+      <Label layoutX="119.0" layoutY="21.0" prefHeight="53.0" prefWidth="160.0" text="Inventory">
          <font>
             <Font size="36.0" />
          </font>

@@ -14,6 +14,9 @@ import java.net.URL;
 import java.sql.*;
 import java.util.ResourceBundle;
 public class Login implements Initializable{
+    final private String incorrectUserOrPass = "Incorrect username or password";
+    final private String userDoesNotExist = "Username does not exist";
+
     private ResultSet rs = null;
     private PreparedStatement pst = null;
     private Connection conn = null;
@@ -35,18 +38,20 @@ public class Login implements Initializable{
     @FXML
     private void loginClicked(ActionEvent event) throws SQLException{
         try{
-            pst = conn.prepareStatement("SELECT password, role FROM login where username = ?");
+            pst = conn.prepareStatement("SELECT * FROM login WHERE username = ?");
             pst.setString(1, user_Text.getText());
             rs = pst.executeQuery();
+            String validUsername;
             String validPassword;
             int role;
 
             while(rs.next()){
+                validUsername = rs.getString("username");
                 validPassword = rs.getString("password");
-                role = rs.getInt("role");
-                if(validPassword.equals(password_PText.getText()) && role == 1){
+                role = rs.getInt("login_id");
+                if(validPassword.equals(password_PText.getText()) && role == 3){
                     Parent managerMenu = FXMLLoader.load(getClass().getResource("AdminMenu.fxml"));
-                    Scene managerScene = new Scene(managerMenu, 515, 363);
+                    Scene managerScene = new Scene(managerMenu, 802, 605);
                     Stage managerStage = (Stage)((Node)event.getSource()).getScene().getWindow();
                     managerStage.setScene(managerScene);
                     managerStage.show();
@@ -56,15 +61,19 @@ public class Login implements Initializable{
                     System.out.println("Will add later");
                     System.out.println("Logged in as employee");
                     break;
+                } else if(validUsername.equals(user_Text.getText())) {
+                    incorrectLogin_Label.setVisible(true);
+                    incorrectLogin_Label.setText(userDoesNotExist);
+                    System.out.println(userDoesNotExist);
                 } else {
                     usernameDNE.setVisible(false);
                     incorrectLogin_Label.setVisible(true);
-                    System.out.println("Incorrect username or password");
+                    incorrectLogin_Label.setText(incorrectUserOrPass);
+                    System.out.println(incorrectUserOrPass);
                 }
-
             }
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
     }
 }

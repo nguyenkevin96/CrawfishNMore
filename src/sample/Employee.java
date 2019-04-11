@@ -1,61 +1,64 @@
 package sample;
 
 public class Employee {
-    private String firstName;
-    private String lastName;
-    private String phoneE;
-    private String userName;
-    private int roleE;
+   private int employee_id;
+   private int permType_id;
+   private String first_nameE;
+   private String last_name;
+   private int meal_status;
 
-    /*
-        Constructor for creating employee
-     */
-
-    public Employee(String firstName, String lastName, String phoneE, String userName, int roleE) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phoneE = phoneE;
-        this.userName = userName;
-        this.roleE = roleE;
+    public Employee(int permType_id, String first_name, String last_name, int meal_status) {
+        this.permType_id = permType_id;
+        this.first_nameE = first_name;
+        this.last_name = last_name;
+        this.meal_status = meal_status;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public Employee() {
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public int getEmployee_id() {
+        return employee_id;
     }
 
-    public String getLastName() {
-        return lastName;
+    public void setEmployee_id(int employee_id) {
+        this.employee_id = employee_id;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public int getPermType_id() {
+        return permType_id;
     }
 
-    public String getPhoneE() {
-        return phoneE;
+    public void setPermType_id(int permType_id) {
+        this.permType_id = permType_id;
     }
 
-    public void setPhoneE(String phoneE) {
-        this.phoneE = phoneE;
+    public String getFirst_name() {
+        return first_nameE;
     }
 
-    public String getUserName() {
-        return userName;
+    public void setFirst_name(String first_name) {
+        this.first_nameE = first_name;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public String getLast_name() {
+        return last_name;
     }
 
-    public int getRoleE() {
-        return roleE;
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
     }
 
-    public void setRoleE(int roleE) {
-        this.roleE = roleE;
+    public int getMeal_status() {
+        return meal_status;
+    }
+
+    public void setMeal_status(int meal_status) {
+        this.meal_status = meal_status;
+    }
+
+    @Override
+    public String toString(){
+        return String.format("%s %s", first_nameE, last_name);
     }
 }

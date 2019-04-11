@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="crawfish@172.26.54.36" uuid="1d9de945-5bc9-49b8-bcc3-c7049f729d33">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://172.26.54.36:1433;database=crawfish</jdbc-url>
+      <driver-properties>
+        <property name="applicationName" value="DataGrip" />
+      </driver-properties>
+    </data-source>
     <data-source source="LOCAL" name="crawfish@localhost" uuid="924fac4a-890b-41bb-95a7-7df9ebe2f7a9">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
