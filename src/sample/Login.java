@@ -30,6 +30,8 @@ public class Login implements Initializable{
     @FXML
     private Label incorrectLogin_Label, usernameDNE;
 
+    Main main = new Main();
+
     @Override
     public void initialize(URL url, ResourceBundle rb){
         conn = DbConnection.dbConnection();
@@ -38,7 +40,13 @@ public class Login implements Initializable{
     @FXML
     private void loginClicked(ActionEvent event) throws SQLException{
         try{
-            pst = conn.prepareStatement("SELECT * FROM login WHERE username = ?");
+            pst = conn.prepareStatement("SELECT login.username, login.password, permtype.permType_id " +
+                    "FROM staff " +
+                    "INNER JOIN permtype " +
+                    "ON staff.permtype_id = permtype.permType_id " +
+                    "INNER JOIN login " +
+                    "ON staff.login_id = login.login_id " +
+                    "WHERE login.username = ?");
             pst.setString(1, user_Text.getText());
             rs = pst.executeQuery();
             String validUsername;
@@ -48,16 +56,12 @@ public class Login implements Initializable{
             while(rs.next()){
                 validUsername = rs.getString("username");
                 validPassword = rs.getString("password");
-                role = rs.getInt("login_id");
-                if(validPassword.equals(password_PText.getText()) && role == 3){
-                    Parent managerMenu = FXMLLoader.load(getClass().getResource("AdminMenu.fxml"));
-                    Scene managerScene = new Scene(managerMenu, 802, 605);
-                    Stage managerStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-                    managerStage.setScene(managerScene);
-                    managerStage.show();
+                role = rs.getInt("permType_id");
+                if(validPassword.equals(password_PText.getText()) && role == 1 || role == 2){
+                    main.changeWindow(event, "AdminMenu.fxml", 1046, 614);
                     System.out.println("Logged in as manager");
                     break;
-                } else if(validPassword.equals(password_PText.getText()) && role == 0) {
+                } else if(validPassword.equals(password_PText.getText()) && role == 3) {
                     System.out.println("Will add later");
                     System.out.println("Logged in as employee");
                     break;

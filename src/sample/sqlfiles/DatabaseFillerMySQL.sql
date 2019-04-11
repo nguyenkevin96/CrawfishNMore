@@ -5,33 +5,31 @@
 -- Table 3 --
 CREATE TABLE login
 (
-  login_id    INT IDENTITY (1,1) NOT NULL PRIMARY KEY,
-  username    VARCHAR(25) UNIQUE NOT NULL,
-  password    VARCHAR(25)        NOT NULL,
+  login_id INT         NOT NULL PRIMARY KEY,
+  username VARCHAR(25) UNIQUE NOT NULL,
+  password VARCHAR(25)        NOT NULL
 );
 
 -- Table 4 --
 CREATE TABLE permtype
 (
-  permType_id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
-  perm_desc   VARCHAR(50),
+  permType_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+  perm_desc   VARCHAR(50)
 );
 
-CREATE TABLE staff
+CREATE TABLE loginPermission
 (
-  staff_id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
-  firstName VARCHAR(25) NOT NULL,
-  lastName VARCHAR(25) NOT NULL,
-  login_id INT NOT NULL,
-  permtype_id INT NOT NULL,
-  FOREIGN KEY (permtype_id) REFERENCES permtype(permtype_id),
-  FOREIGN KEY (login_id) REFERENCES login(login_id)
-)
+  loginpermission_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+  login_id      INT                NOT NULL,
+  permType_id   INT                NOT NULL,
+  FOREIGN KEY (login_id) REFERENCES login(login_id),
+  FOREIGN KEY (permType_id) REFERENCES permtype(permType_id)
+);
 
 -- Table 2 --
 CREATE TABLE status
 (
-  status_id   INT IDENTITY(1,1)  NOT NULL PRIMARY KEY,
+  status_id   INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
   login_id    INT                NOT NULL,
   status_desc varchar(10)        NOT NULL,
   FOREIGN KEY(login_id) REFERENCES login(login_id)
@@ -40,7 +38,7 @@ CREATE TABLE status
 -- Table 1 --
 CREATE TABLE loginLog
 (
-  loginlog_id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+  loginlog_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
   user_id     INT                NOT NULL, -- Remove?
   status_id   INT                NOT NULL,
   timestamp   DATE               NOT NULL,
@@ -50,16 +48,18 @@ CREATE TABLE loginLog
 -- Table 5 --
 CREATE TABLE employee
 (
-  employee_id   INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
-  staff_id   INT                NOT NULL,
-  meal_status   INT                NOT NULL
-  FOREIGN KEY(staff_id) REFERENCES staff(staff_id)
+  employee_id   INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+  permType_id   INT                NOT NULL,
+  first_name    VARCHAR(25)        NOT NULL,
+  last_name     VARCHAR(25)        NOT NULL,
+  meal_status   INT                NOT NULL,
+  FOREIGN KEY(permType_id) REFERENCES permtype(permType_id)
 );
 
 -- Table 6 --
 CREATE TABLE emergencyContact
 (
-  emergency_id       INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+  emergency_id       INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
   employee_id        INT                NOT NULL,
   contactName        VARCHAR(25)        NOT NULL,
   contactPhoneNumber varchar(25)        NOT NULL,
@@ -69,7 +69,7 @@ CREATE TABLE emergencyContact
 -- Table 7 --
 CREATE TABLE mealStatus
 (
-  mealStatus_id  INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+  mealStatus_id  INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
   employee_id    INT                NOT NULL,
   mealCreditDate DATE               NOT NULL,
   FOREIGN KEY (employee_id) REFERENCES employee (employee_id)
@@ -78,7 +78,7 @@ CREATE TABLE mealStatus
 -- Table 9 --
 CREATE TABLE customer
 (
-  customer_id   INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+  customer_id   INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
   customerPhone VARCHAR(20)        NOT NULL,
   customerEmail VARCHAR(50)        NOT NULL,
   firstName     VARCHAR(25)        NOT NULL,
@@ -88,7 +88,7 @@ CREATE TABLE customer
 -- Table 12 --
 CREATE TABLE storeLocation
 (
-  location_id     INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+  location_id     INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
   locationAddress VARCHAR(100)       NOT NULL
 );
 
@@ -102,7 +102,7 @@ CREATE TABLE menu
 -- Table 30 --
 CREATE TABLE menuItems
 (
-  menuItem_id   INT          NOT NULL IDENTITY(1,1) PRIMARY KEY,
+  menuItem_id   INT          NOT NULL AUTO_INCREMENT PRIMARY KEY,
   menu_id       INT          NOT NULL,
   menuItemName  VARCHAR(25)  NOT NULL,
   menuItemPrice DECIMAL      NOT NULL,
@@ -113,7 +113,7 @@ CREATE TABLE menuItems
 -- Table 8 --
 CREATE TABLE sales
 (
-  sales_id      INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+  sales_id      INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
   employee_id   INT                NOT NULL,
   customer_id   INT                NOT NULL,
   menuItem_id   INT                NOT NULL,
@@ -130,7 +130,7 @@ CREATE TABLE sales
 -- Table 10 --
 CREATE TABLE rewards
 (
-  reward_id    INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+  reward_id    INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
   customer_id  INT                NOT NULL,
   rewardPoints INT                NOT NULL,
   FOREIGN KEY (customer_id) REFERENCES customer (customer_id)
@@ -139,7 +139,7 @@ CREATE TABLE rewards
 -- Table 11 --
 CREATE TABLE pointsRedemption
 (
-  redemption_id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+  redemption_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
   reward_id     INT               NOT NULL,
   redeemStatus  INT               NOT NULL,
   FOREIGN KEY (reward_id) REFERENCES rewards (reward_id)
@@ -148,15 +148,17 @@ CREATE TABLE pointsRedemption
 -- Table 26 --
 CREATE TABLE admin
 (
-  admin_id      INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-  staff_id INT NOT NULL,
-  FOREIGN KEY (staff_id) REFERENCES staff (staff_id)
+  admin_id      INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  permType_id INT NOT NULL,
+  firstName     VARCHAR(25) NOT NULL,
+  lastName      VARCHAR(25) NOT NULL,
+  FOREIGN KEY (permType_id) REFERENCES permtype (permType_id)
 );
 
 -- Table 15 --
 CREATE TABLE suppliers
 (
-  supplier_id     INT         NOT NULL IDENTITY(1,1) PRIMARY KEY,
+  supplier_id     INT         NOT NULL AUTO_INCREMENT PRIMARY KEY,
   admin_id        INT         NOT NULL,
   supplier_status INT         NOT NULL,
   supplierName    VARCHAR(25) NOT NULL
@@ -165,7 +167,7 @@ CREATE TABLE suppliers
 -- Table 16 --
 CREATE TABLE orders
 (
-  order_id     INT  NOT NULL IDENTITY(1,1) PRIMARY KEY,
+  order_id     INT  NOT NULL AUTO_INCREMENT PRIMARY KEY,
   admin_id     INT  NOT NULL,
   supplier_id  INT  NOT NULL,
   orderDate    DATE NOT NULL,
@@ -177,7 +179,7 @@ CREATE TABLE orders
 -- Table 13 --
 CREATE TABLE deliveryHistory
 (
-  delivery_id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+  delivery_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
   order_id    INT                NOT NULL,
   location_id INT                NOT NULL,
   FOREIGN KEY (order_id) REFERENCES orders (order_id),
@@ -196,7 +198,7 @@ CREATE TABLE storeLocation_supplier
 -- Table 23 --
 CREATE TABLE product
 (
-  product_id   INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+  product_id   INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
   supplier_id  INT                NOT NULL,
   productName  VARCHAR(25)        NOT NULL,
   productPrice DECIMAL(4, 2)       NOT NULL,
@@ -206,7 +208,7 @@ CREATE TABLE product
 -- Table 17 --
 CREATE TABLE orderDetails
 (
-  orderDetail_id INT    NOT NULL IDENTITY(1,1) PRIMARY KEY,
+  orderDetail_id INT    NOT NULL AUTO_INCREMENT PRIMARY KEY,
   product_id     INT    NOT NULL,
   quantity       INT    NOT NULL,
   unitPrice      INT    NOT NULL,
@@ -218,7 +220,7 @@ CREATE TABLE orderDetails
 -- Table 18 --
 CREATE TABLE supplierBill
 (
-  supplierPayment_id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+  supplierPayment_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   order_id           INT NOT NULL,
   FOREIGN KEY (order_id) REFERENCES orders (order_id)
 );
@@ -232,22 +234,13 @@ CREATE TABLE supplier_product
   FOREIGN KEY (product_id) REFERENCES product (product_id)
 );
 
--- Table 22 --
-CREATE TABLE discounts
-(
-  discount_id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
-  discountAmt INT                NOT NULL
-);
-
 -- Table 20 --
 CREATE TABLE supplierEmployee
 (
-  supplierEmp_id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+  supplierEmp_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
   supplierEmpPhone VARCHAR(20) NOT NULL,
   supplier_id INT NOT NULL,
-  discount_id INT NOT NULL
-  FOREIGN KEY (supplier_id) REFERENCES suppliers(supplier_id),
-  FOREIGN KEY (discount_id) REFERENCES discounts(discount_id)
+  FOREIGN KEY (supplier_id) REFERENCES suppliers(supplier_id)
 );
 
 -- Table 21 --
@@ -259,10 +252,17 @@ CREATE TABLE orderdetails_product
   FOREIGN KEY (product_id) REFERENCES product (product_id)
 );
 
+-- Table 22 --
+CREATE TABLE discounts
+(
+  discount_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+  discountAmt INT                NOT NULL
+);
+
 -- Table 24 --
 CREATE TABLE inventory
 (
-  inventory_id    INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+  inventory_id    INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
   product_id      INT                NOT NULL,
   currentProdAmt  INT                NOT NULL,
   requiredProdAmt INT                NOT NULL,
@@ -272,7 +272,7 @@ CREATE TABLE inventory
 -- Table 25 --
 CREATE TABLE category
 (
-  category_id  INT         NOT NULL IDENTITY(1,1) PRIMARY KEY,
+  category_id  INT         NOT NULL AUTO_INCREMENT PRIMARY KEY,
   inventory_id INT         NOT NULL,
   categoryName VARCHAR(25) NOT NULL,
   FOREIGN KEY (inventory_id) REFERENCES inventory (inventory_id)
@@ -299,30 +299,13 @@ CREATE TABLE menuHistory
   FOREIGN KEY (menu_id) REFERENCES menu (menu_id)
 );*/
 
-INSERT INTO permtype (perm_desc) VALUES ('Admin');
-INSERT INTO permtype (perm_desc) VALUES ('Manager');
 INSERT INTO permtype (perm_desc) VALUES ('Employee');
+INSERT INTO permtype (perm_desc) VALUES ('Manager');
+INSERT INTO permtype (perm_desc) VALUES ('Admin');
 
-INSERT INTO login (username, password) VALUES ('kevin', 'kevin');
-INSERT INTO staff (firstName, lastName, login_id, permtype_id)  VALUES ('Kevin', 'Nguyen', 1, 1)
-INSERT INTO login (username, password) VALUES ('fernando', 'fernando');
-INSERT INTO staff (firstName, lastName, login_id, permtype_id) VALUES ('Fernando', 'Yang', 2, 1);
-INSERT INTO login (username, password) VALUES ('steven', 'steven');
-INSERT INTO staff (firstName, lastName, login_id, permtype_id) VALUES ('Steven', 'Chea', 3, 1);
-INSERT INTO login (username, password) VALUES ('erwin', 'erwin');
-INSERT INTO staff (firstName, lastName, login_id, permtype_id) VALUES ('Erwin', 'Balanquit', 4, 2);
-INSERT INTO login (username, password) VALUES ('hue', 'hue');
-INSERT INTO staff (firstName, lastName, login_id, permtype_id) VALUES ('Hue', 'Le', 5, 2);
-INSERT INTO login (username, password) VALUES ('marvin', 'marvin');
-INSERT INTO staff (firstName, lastName, login_id, permtype_id) VALUES ('Marvin', 'Ngo', 6, 3);
+INSERT INTO login (login_id, username, password) VALUES (3, 'kevin', 'kevin');
 
-/*INSERT INTO permtype (perm_desc, staff_id) VALUES ('Admin', 1)
-INSERT INTO permtype (perm_desc, staff_id) VALUES ('Employee', 2)
-INSERT INTO permtype (perm_desc, staff_id) VALUES ('Manager', 3)
-
-INSERT INTO login (username, password, permType_id) VALUES ('kevin', 'kevin', 3);
-
-INSERT INTO admin (permType_id, firstName, lastName) VALUES (3, 'Kevin', 'Nguyen');
+INSERT INTO admin (permType_id, firstName, lastName) VALUES (3, 'kevin', 'nguyen');
 
 INSERT INTO suppliers (admin_id, supplier_status, supplierName) VALUES (1, 1, 'Fish Market');
 INSERT INTO suppliers (admin_id, supplier_status, supplierName) VALUES (1, 1, 'Crab Market');
@@ -351,4 +334,4 @@ INSERT INTO inventory (product_id, currentProdAmt, requiredProdAmt) VALUES (4, 8
 
 INSERT INTO employee (permType_id, first_name, last_name, meal_status) VALUES (1, 'Steven', 'Chea', 1);
 INSERT INTO employee (permType_id, first_name, last_name, meal_status) VALUES (1, 'Erwin', 'Balanquit', 1);
-INSERT INTO employee (permType_id, first_name, last_name, meal_status) VALUES (1, 'Hue', 'Le', 1);*/
+INSERT INTO employee (permType_id, first_name, last_name, meal_status) VALUES (1, 'Hue', 'Le', 1);
