@@ -1,15 +1,20 @@
 package sample;
 
+import CRUDfxml.AddEmployeeController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
-import javax.swing.*;
+import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
 import java.util.ArrayList;
@@ -25,6 +30,7 @@ public class AdminMenu implements Initializable {
     Main main = new Main();
 
     public ObservableList<Staff> loginData;
+    public ObservableList<Inventory> recentOrders;
 
     public ListView<String> employee_List, adminManager_List, recentRec_List;
 
@@ -33,7 +39,7 @@ public class AdminMenu implements Initializable {
     public ObservableList<String> currEmployeeList, currAdminList, currRecentRecieved;
 
     public TableView<Staff> loginTableView;
-    public TableView<Inventory> inventoryTableView;
+    public TableView<Inventory> recentOrderTableView;
 
     public TableColumn<Staff, String> firstname_Column, lastname_Column, username_Column, permission_Column;
     public TableColumn<Supplier, String> suppliername_Column, productname_Column, currentamt_Column, requiredamt_Column;
@@ -42,22 +48,23 @@ public class AdminMenu implements Initializable {
     public void initialize(URL url, ResourceBundle rb){
         conn = DbConnection.dbConnection();
         loginData = FXCollections.observableArrayList();
+        recentOrders = FXCollections.observableArrayList();
         tempEmployee = new ArrayList<>();
         tempAdmin = new ArrayList<>();
         tempRecentRecieve = new ArrayList<>();
         addEmployeeListData();
-//        addAdminListData();
+        addAdminListData();
         addRecentReceivedData();
         loadLoginData();
         loginSupplierTableViewCellData();
     }
 
     public void inventoryManagementClicked(ActionEvent event) throws Exception{
-        main.changeWindow(event, "InventoryManagement.fxml", 581, 498);
+        main.changeWindow(event, "/sample/InventoryManagement.fxml", 581, 498);
     }
 
     public void handleEmployeeManager(ActionEvent event) throws Exception{
-        main.changeWindow(event, "EmployeeManager_Manager.fxml", 766, 396);
+        main.changeWindow(event, "/sample/EmployeeManager_Manager.fxml", 766, 396);
     }
 
     private void addEmployeeListData(){
@@ -78,10 +85,11 @@ public class AdminMenu implements Initializable {
 
     private void addAdminListData(){
         try{
-            pst = conn.prepareStatement("SELECT * FROM staff");
+            pst = conn.prepareStatement("SELECT staff.staff_id, staff.firstName, staff.lastName " +
+                    "FROM staff WHERE staff.permtype_id = 1 OR staff.permtype_id = 2");
             rs = pst.executeQuery();
             while(rs.next()){
-                String name = rs.getString("firstName") + " " + rs.getString("lastName");
+                String name = rs.getInt("staff_id") + "\t" + rs.getString("firstName") + " " + rs.getString("lastName");
                 tempAdmin.add(name);
             }
             currAdminList = FXCollections.observableArrayList(tempAdmin);
@@ -96,10 +104,10 @@ public class AdminMenu implements Initializable {
         lastname_Column.setCellValueFactory(new PropertyValueFactory<>("lastname"));
         username_Column.setCellValueFactory(new PropertyValueFactory<>("username"));
         permission_Column.setCellValueFactory(new PropertyValueFactory<>("perm_desc"));
-/*        suppliername_Column.setCellValueFactory(new PropertyValueFactory<>("supplierName"));
+        suppliername_Column.setCellValueFactory(new PropertyValueFactory<>("supplierName"));
         productname_Column.setCellValueFactory(new PropertyValueFactory<>("productName"));
-        currentamt_Column.setCellValueFactory(new PropertyValueFactory<>("currentProd"));
-        requiredamt_Column.setCellValueFactory(new PropertyValueFactory<>("requiredProd"));*/
+        currentamt_Column.setCellValueFactory(new PropertyValueFactory<>("currentP"));
+        requiredamt_Column.setCellValueFactory(new PropertyValueFactory<>("requiredP"));
     }
 
     private void loadLoginData(){
@@ -125,11 +133,55 @@ public class AdminMenu implements Initializable {
         loginTableView.setItems(loginData);
     }
 
-    private void addRecentReceivedData(){
-
+    private void addRecentReceivedData() {
+        try {
+            pst = conn.prepareStatement("SELECT TOP 10 suppliers.supplierName, product.productName, inventory.currentProdAmt, inventory.requiredProdAmt " +
+                    "FROM inventory " +
+                    "INNER JOIN product " +
+                    "ON inventory.product_id = product.product_id " +
+                    "INNER JOIN suppliers " +
+                    "on product.supplier_id = suppliers.supplier_id");
+            rs = pst.executeQuery();
+            while(rs.next()){
+                recentOrders.add(new Inventory(
+                   rs.getString("supplierName"),
+                   rs.getString("productName"),
+                   rs.getDouble("currentProdAmt"),
+                   rs.getDouble("requiredProdAmt")
+                ));
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+    recentOrderTableView.setItems(recentOrders);
     }
 
     public void changeToEmployee(ActionEvent event){
         /*main.changeWindow(event);*/
     }
+
+    public void handleAddEmployee(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/CRUDfxml/AddEmployee.fxml"));
+        Parent parent = loader.load();
+//        AddEmployeeController controller = loader.getController();
+//        controller.addDataToController(loginTableView.getSelectionModel().getSelectedItem());
+        Stage window = new Stage();
+        window.setTitle("Add Employee");
+        window.setScene(new Scene(parent));
+        window.show();
+    }
+
+    /*private void handleEditEmployee(String location) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(location));
+        Parent parent = loader.load();
+
+        editProduct controller = loader.getController();
+
+        controller.addDataToController(staff.getSelectionModel().getSelectedItem());
+
+        Stage window = new Stage();
+        window.setTitle("Edit Employee");
+        window.setScene(new Scene(parent));
+        window.show();
+    }*/
 }

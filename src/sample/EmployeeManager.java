@@ -1,4 +1,4 @@
-/*
+
 package sample;
 
 import javafx.collections.FXCollections;
@@ -24,6 +24,7 @@ public class EmployeeManager implements Initializable {
     private PreparedStatement pst = null;
     private Connection conn = null;
     private ObservableList<Employee> data;
+    private ObservableList<String> roleOptions;
 
     @FXML
     private TableView<Employee> employeeList;
@@ -34,16 +35,19 @@ public class EmployeeManager implements Initializable {
     private TextField firstname_Text, lastname_Text, phone_Text,
             username_Text, password_Text, role_Text;
 
+    @FXML
+    public ComboBox employee_Combo;
 
     @Override
-    public void initialize(URL url, ResourceBundle rb){
+    public void initialize(URL url, ResourceBundle rb) {
         conn = DbConnection.dbConnection();
         data = FXCollections.observableArrayList();
-        setCellValue();
-        loadDataFromEmployee();
-        selectedRowToTable();
+//        setCellValue();
+//        loadDataFromEmployee();
+//        selectedRowToTable();
     }
-
+}
+/*
     private void setCellValue(){
         firstname_Column.setCellValueFactory(new PropertyValueFactory<>("firstName"));
         lastname_Column.setCellValueFactory(new PropertyValueFactory<>("lastName"));

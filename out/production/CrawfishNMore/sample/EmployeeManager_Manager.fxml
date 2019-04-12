@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -29,11 +30,10 @@
       <TextField fx:id="username_Text" layoutX="14.0" layoutY="162.0" prefHeight="43.0" prefWidth="164.0" promptText="Username" />
       <TextField fx:id="password_Text" layoutX="14.0" layoutY="214.0" prefHeight="43.0" prefWidth="164.0" promptText="Password" />
       <TextField fx:id="phone_Text" layoutX="14.0" layoutY="266.0" prefHeight="43.0" prefWidth="164.0" promptText="Phone" />
-      <TextField fx:id="role_Text" layoutX="14.0" layoutY="317.0" prefHeight="43.0" prefWidth="63.0" promptText="Role" />
-      <Label layoutX="82.0" layoutY="317.0" prefHeight="43.0" prefWidth="96.0" text="Manager = 1 Employee = 0" wrapText="true" />
-      <Button fx:id="addemployee_Button" layoutX="216.0" layoutY="57.0" mnemonicParsing="false" onAction="#handleAddEmployee" prefHeight="43.0" prefWidth="83.0" text="Add" />
-      <Button fx:id="editemployee_Button" layoutX="216.0" layoutY="109.0" mnemonicParsing="false" onAction="#handleEditEmployee" prefHeight="43.0" prefWidth="83.0" text="Edit/Update" />
-      <Button fx:id="deleteemployee_Button" layoutX="216.0" layoutY="162.0" mnemonicParsing="false" onAction="#handleDeleteEmployee" prefHeight="43.0" prefWidth="83.0" text="Delete" />
-      <Button fx:id="deleteemployee_Button" layoutX="216.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="43.0" prefWidth="83.0" text="Back" />
+      <Button fx:id="addemployee_Button" layoutX="216.0" layoutY="57.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="83.0" text="Add" />
+      <Button fx:id="editemployee_Button" layoutX="216.0" layoutY="109.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="83.0" text="Edit/Update" />
+      <Button fx:id="deleteemployee_Button" layoutX="216.0" layoutY="162.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="83.0" text="Delete" />
+      <Button fx:id="deleteemployee_Button" layoutX="216.0" layoutY="317.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="83.0" text="Back" />
+      <ChoiceBox fx:id="employee_Combo" layoutX="14.0" layoutY="317.0" prefHeight="43.0" prefWidth="164.0" />
    </children>
 </AnchorPane>

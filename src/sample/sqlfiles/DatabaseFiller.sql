@@ -330,27 +330,6 @@ BULK INSERT crawfish.dbo.staff
       FIRSTROW = 2
   )
 
-/*INSERT INTO login (username, password) VALUES ('kevin', 'kevin');
-INSERT INTO staff (firstName, lastName, login_id, permtype_id)  VALUES ('Kevin', 'Nguyen', 1, 1)
-INSERT INTO login (username, password) VALUES ('fernando', 'fernando');
-INSERT INTO staff (firstName, lastName, login_id, permtype_id) VALUES ('Fernando', 'Yang', 2, 1);
-INSERT INTO login (username, password) VALUES ('steven', 'steven');
-INSERT INTO staff (firstName, lastName, login_id, permtype_id) VALUES ('Steven', 'Chea', 3, 1);
-INSERT INTO login (username, password) VALUES ('erwin', 'erwin');
-INSERT INTO staff (firstName, lastName, login_id, permtype_id) VALUES ('Erwin', 'Balanquit', 4, 2);
-INSERT INTO login (username, password) VALUES ('hue', 'hue');
-INSERT INTO staff (firstName, lastName, login_id, permtype_id) VALUES ('Hue', 'Le', 5, 2);
-INSERT INTO login (username, password) VALUES ('marvin', 'marvin');
-INSERT INTO staff (firstName, lastName, login_id, permtype_id) VALUES ('Marvin', 'Ngo', 6, 3);
-
-INSERT INTO permtype (perm_desc, staff_id) VALUES ('Admin', 1)
-INSERT INTO permtype (perm_desc, staff_id) VALUES ('Employee', 2)
-INSERT INTO permtype (perm_desc, staff_id) VALUES ('Manager', 3)
-
-INSERT INTO login (username, password, permType_id) VALUES ('kevin', 'kevin', 3);
-
-INSERT INTO admin (permType_id, firstName, lastName) VALUES (3, 'Kevin', 'Nguyen');
-
 INSERT INTO suppliers (admin_id, supplier_status, supplierName) VALUES (1, 1, 'Fish Market');
 INSERT INTO suppliers (admin_id, supplier_status, supplierName) VALUES (1, 1, 'Crab Market');
 INSERT INTO suppliers (admin_id, supplier_status, supplierName) VALUES (1, 1, 'Crawfish Market');
@@ -375,7 +354,3 @@ INSERT INTO inventory (product_id, currentProdAmt, requiredProdAmt) VALUES (3, 3
 INSERT INTO inventory (product_id, currentProdAmt, requiredProdAmt) VALUES (5, 2, 9);
 INSERT INTO inventory (product_id, currentProdAmt, requiredProdAmt) VALUES (1, 1, 9);
 INSERT INTO inventory (product_id, currentProdAmt, requiredProdAmt) VALUES (4, 8, 9);
-
-INSERT INTO employee (permType_id, first_name, last_name, meal_status) VALUES (1, 'Steven', 'Chea', 1);
-INSERT INTO employee (permType_id, first_name, last_name, meal_status) VALUES (1, 'Erwin', 'Balanquit', 1);
-INSERT INTO employee (permType_id, first_name, last_name, meal_status) VALUES (1, 'Hue', 'Le', 1);*/

@@ -3,21 +3,20 @@ package sample;
 public class Inventory {
     private String supplierName;
     private String productName;
-    private int productid;
-    private int currentProd;
-    private int requiredProd;
+    private double currentP;
+    private double requiredP;
 
-    public Inventory(String supplierName, String productName, int currentProd, int requiredProd) {
+    public Inventory(String supplierName, String productName, double currentP, double requiredP) {
         this.supplierName = supplierName;
         this.productName = productName;
-        this.currentProd = currentProd;
-        this.requiredProd = requiredProd;
+        this.currentP = currentP;
+        this.requiredP = requiredP;
     }
 
-    public Inventory(String productName, int currentProd, int requiredProd) {
+    public Inventory(String productName, double currentP, double requiredP) {
         this.productName = productName;
-        this.currentProd = currentProd;
-        this.requiredProd = requiredProd;
+        this.currentP = currentP;
+        this.requiredP = requiredP;
     }
 
     public String getSupplierName() {
@@ -36,27 +35,19 @@ public class Inventory {
         this.productName = productName;
     }
 
-    public int getProductid() {
-        return productid;
+    public double getCurrentP() {
+        return currentP;
     }
 
-    public void setProductid(int productid) {
-        this.productid = productid;
+    public void setCurrentP(double currentProd) {
+        this.currentP = currentProd;
     }
 
-    public int getCurrentProd() {
-        return currentProd;
+    public double getRequiredP() {
+        return requiredP;
     }
 
-    public void setCurrentProd(int currentProd) {
-        this.currentProd = currentProd;
-    }
-
-    public int getRequiredProd() {
-        return requiredProd;
-    }
-
-    public void setRequiredProd(int requiredProd) {
-        this.requiredProd = requiredProd;
+    public void setRequiredP(double requiredP) {
+        this.requiredP = requiredP;
     }
 }

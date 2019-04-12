@@ -21,11 +21,11 @@ public class editProduct implements Initializable {
     @FXML
     private TextField productName_Text, currentProd_Text, requiredProd_Text;
 
-    public void addDataToController(Inventory product){
+/*    public void addDataToController(Inventory product){
         productName_Text.setText(product.getProductName());
         currentProd_Text.setText(String.valueOf(product.getProductid()));
         requiredProd_Text.setText(String.valueOf(product.getCurrentProd()));
-    }
+    }*/
 
 /*    private boolean editProduct(ActionEvent event, Inventory inventory){
         try{

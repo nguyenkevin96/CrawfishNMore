@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="615.0" prefWidth="1046.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminMenu">
+<AnchorPane prefHeight="615.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminMenu">
    <children>
       <VBox prefHeight="615.0" prefWidth="168.0">
          <children>
@@ -29,7 +29,7 @@
                <children>
                   <Button fx:id="inventoryManagement_Button" mnemonicParsing="false" onAction="#inventoryManagementClicked" prefHeight="89.0" prefWidth="169.0" text="Inventory Management" textAlignment="CENTER" wrapText="true" />
                   <Button fx:id="employeeManager_Button" mnemonicParsing="false" onAction="#handleEmployeeManager" prefHeight="89.0" prefWidth="169.0" text="Employee Manager" textAlignment="CENTER" wrapText="true" />
-                  <Button mnemonicParsing="false" prefHeight="89.0" prefWidth="169.0" text="Placeholder" />
+                  <Button mnemonicParsing="false" prefHeight="89.0" prefWidth="169.0" text="SQL Injection" />
                   <Button mnemonicParsing="false" prefHeight="89.0" prefWidth="169.0" text="Placeholder" />
                   <Button mnemonicParsing="false" onAction="#changeToEmployee" prefHeight="89.0" prefWidth="168.0" text="Employee Order Menu" />
                </children>
@@ -41,7 +41,7 @@
             <Font size="48.0" />
          </font>
       </Label>
-      <Label layoutX="520.0" layoutY="384.0" text="Employee" underline="true">
+      <Label layoutX="514.0" layoutY="384.0" text="Employee" underline="true">
          <font>
             <Font size="18.0" />
          </font></Label>
@@ -60,7 +60,7 @@
          </font>
       </Label>
       <ListView fx:id="adminManager_List" layoutX="206.0" layoutY="418.0" prefHeight="185.0" prefWidth="209.0" />
-      <ListView fx:id="employee_List" layoutX="454.0" layoutY="418.0" prefHeight="185.0" prefWidth="209.0" />
+      <ListView fx:id="employee_List" layoutX="449.0" layoutY="418.0" prefHeight="185.0" prefWidth="209.0" />
       <TableView fx:id="loginTableView" layoutX="206.0" layoutY="145.0" prefHeight="220.0" prefWidth="829.0">
         <columns>
           <TableColumn fx:id="firstname_Column" prefWidth="180.0" text="First Name" />
@@ -71,19 +71,19 @@
          <contextMenu>
             <ContextMenu>
               <items>
-                <MenuItem mnemonicParsing="false" text="Add" />
+                <MenuItem mnemonicParsing="false" onAction="#handleAddEmployee" text="Add" />
                   <MenuItem mnemonicParsing="false" text="Edit" />
                   <MenuItem mnemonicParsing="false" text="Delete" />
               </items>
             </ContextMenu>
          </contextMenu>
       </TableView>
-      <TableView layoutX="696.0" layoutY="419.0" prefHeight="185.0" prefWidth="338.0">
+      <TableView fx:id="recentOrderTableView" layoutX="693.0" layoutY="419.0" prefHeight="185.0" prefWidth="341.0">
         <columns>
-            <TableColumn fx:id="suppliername_Column" prefWidth="96.0" text="Supplier Name" />
-          <TableColumn fx:id="productname_Column" prefWidth="99.0" text="Product Name" />
-          <TableColumn fx:id="currentamt_Column" prefWidth="67.0" text="Curr. Amt" />
-            <TableColumn fx:id="requiredamt_Column" prefWidth="75.0" text="Req. Amt" />
+            <TableColumn fx:id="suppliername_Column" prefWidth="95.0" text="Supplier" />
+          <TableColumn fx:id="productname_Column" prefWidth="93.0" text="Product" />
+          <TableColumn fx:id="currentamt_Column" prefWidth="77.0" text="Curr. Amt" />
+            <TableColumn fx:id="requiredamt_Column" prefWidth="72.0" text="Req. Amt" />
         </columns>
       </TableView>
    </children>
