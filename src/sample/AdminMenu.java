@@ -227,6 +227,7 @@ public class AdminMenu implements Initializable {
         } catch (SQLException ex){
             ex.printStackTrace();
         }
+        loadLoginData();
     }
 
     public void changeCustomSQL(ActionEvent event) throws IOException{

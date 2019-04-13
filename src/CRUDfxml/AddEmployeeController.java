@@ -73,12 +73,27 @@ public class AddEmployeeController implements Initializable {
                 System.out.println("Select login_id failed");
             }
 
+            int index = employeeRole.getSelectionModel().getSelectedIndex()+1;
 
-            try{
-                pst = conn.prepareStatment("SELECT permType FROM ")
-            } catch (SQLException e){
-                e.getMessage();
+            if(index == 1 || index == 2) {
+                try {
+                    pst = conn.prepareStatement("INSERT INTO admin (staff_id) VALUES (?)");
+                    pst.setInt(1, index);
+                    pst.executeUpdate();
+                } catch (SQLException ex) {
+                    ex.getMessage();
+                }
+            } else {
+                try {
+                    pst = conn.prepareStatement("INSERT INTO employee (staff_id, meal_status) VALUES (?, ?)");
+                    pst.setInt(1, index);
+                    pst.setInt(1, 1);
+                    pst.executeUpdate();
+                } catch (SQLException ex) {
+                    ex.getMessage();
+                }
             }
+
         } else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setContentText("Passwords do not match");

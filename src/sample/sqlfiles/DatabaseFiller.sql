@@ -25,7 +25,7 @@ CREATE TABLE staff
   login_id INT NOT NULL,
   permtype_id INT NOT NULL,
   FOREIGN KEY (permtype_id) REFERENCES permtype(permtype_id),
-  FOREIGN KEY (login_id) REFERENCES login(login_id)
+  FOREIGN KEY (login_id) REFERENCES login(login_id) ON UPDATE CASCADE
 )
 
 -- Table 2 --
