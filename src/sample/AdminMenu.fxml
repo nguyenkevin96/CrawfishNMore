@@ -29,7 +29,7 @@
                <children>
                   <Button fx:id="inventoryManagement_Button" mnemonicParsing="false" onAction="#inventoryManagementClicked" prefHeight="102.0" prefWidth="169.0" text="Inventory Management" textAlignment="CENTER" wrapText="true" />
                   <Button fx:id="employeeManager_Button" mnemonicParsing="false" onAction="#handleEmployeeManager" prefHeight="102.0" prefWidth="169.0" text="Employee Manager" textAlignment="CENTER" wrapText="true" />
-                  <Button mnemonicParsing="false" prefHeight="102.0" prefWidth="169.0" text="SQL Scripts" />
+                  <Button mnemonicParsing="false" onAction="#changeCustomSQL" prefHeight="102.0" prefWidth="169.0" text="SQL Scripts" />
                   <Button mnemonicParsing="false" onAction="#changeToEmployee" prefHeight="102.0" prefWidth="168.0" text="Employee Order Menu" />
                </children>
             </VBox>

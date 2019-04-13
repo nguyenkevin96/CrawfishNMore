@@ -72,6 +72,13 @@ public class AddEmployeeController implements Initializable {
             } catch (SQLException ex){
                 System.out.println("Select login_id failed");
             }
+
+
+            try{
+                pst = conn.prepareStatment("SELECT ")
+            } catch (SQLException e){
+                e.getMessage();
+            }
         } else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setContentText("Passwords do not match");

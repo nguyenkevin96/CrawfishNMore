@@ -228,4 +228,8 @@ public class AdminMenu implements Initializable {
             ex.printStackTrace();
         }
     }
+
+    public void changeCustomSQL(ActionEvent event) throws IOException{
+        main.changeWindow(event, "/CRUDfxml/CustomSQL.fxml", 600, 509);
+    }
 }

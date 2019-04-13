@@ -330,6 +330,16 @@ BULK INSERT crawfish.dbo.staff
       FIRSTROW = 2
   )
 
+BULK INSERT crawfish.dbo.customer
+    FROM 'C:\customer.tsv'
+    WITH(
+      FIELDTERMINATOR = '\t',
+      ROWTERMINATOR = '\n',
+      FIRSTROW = 2
+  )
+
+INSERT INTO admin (staff_id) SELECT staff_id FROM staff WHERE permType_id = 1 OR permType_id = 2;
+
 INSERT INTO suppliers (admin_id, supplier_status, supplierName) VALUES (1, 1, 'Fish Market');
 INSERT INTO suppliers (admin_id, supplier_status, supplierName) VALUES (1, 1, 'Crab Market');
 INSERT INTO suppliers (admin_id, supplier_status, supplierName) VALUES (1, 1, 'Crawfish Market');
