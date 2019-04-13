@@ -33,7 +33,7 @@
             <Label fx:id="password_Label" layoutX="80.0" layoutY="185.0" text="Password:" />
             <ImageView fitHeight="35.0" fitWidth="73.0" layoutX="7.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="/sample/logo/Consulting Logo.jpg" />
+                  <Image url="/sample/logo/Consulting Logo.png" />
                </image>
             </ImageView>
             <Label fx:id="incorrectLogin_Label" layoutX="119.0" layoutY="132.0" text="Username or password is incorrect" textFill="RED" visible="false" />

@@ -75,7 +75,7 @@ public class AddEmployeeController implements Initializable {
 
 
             try{
-                pst = conn.prepareStatment("SELECT ")
+                pst = conn.prepareStatment("SELECT permType FROM ")
             } catch (SQLException e){
                 e.getMessage();
             }
