@@ -15,7 +15,7 @@
 
 <AnchorPane prefHeight="615.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminMenu">
    <children>
-      <VBox prefHeight="615.0" prefWidth="168.0">
+      <VBox alignment="CENTER" prefHeight="615.0" prefWidth="168.0">
          <children>
             <VBox prefHeight="188.0" prefWidth="168.0">
                <children>
@@ -27,13 +27,13 @@
                </children></VBox>
             <VBox prefHeight="467.0" prefWidth="168.0">
                <children>
-                  <Button fx:id="inventoryManagement_Button" mnemonicParsing="false" onAction="#inventoryManagementClicked" prefHeight="89.0" prefWidth="169.0" text="Inventory Management" textAlignment="CENTER" wrapText="true" />
-                  <Button fx:id="employeeManager_Button" mnemonicParsing="false" onAction="#handleEmployeeManager" prefHeight="89.0" prefWidth="169.0" text="Employee Manager" textAlignment="CENTER" wrapText="true" />
-                  <Button mnemonicParsing="false" prefHeight="89.0" prefWidth="169.0" text="SQL Scripts" />
-                  <Button mnemonicParsing="false" prefHeight="89.0" prefWidth="169.0" text="Placeholder" />
-                  <Button mnemonicParsing="false" onAction="#changeToEmployee" prefHeight="89.0" prefWidth="168.0" text="Employee Order Menu" />
+                  <Button fx:id="inventoryManagement_Button" mnemonicParsing="false" onAction="#inventoryManagementClicked" prefHeight="102.0" prefWidth="169.0" text="Inventory Management" textAlignment="CENTER" wrapText="true" />
+                  <Button fx:id="employeeManager_Button" mnemonicParsing="false" onAction="#handleEmployeeManager" prefHeight="102.0" prefWidth="169.0" text="Employee Manager" textAlignment="CENTER" wrapText="true" />
+                  <Button mnemonicParsing="false" prefHeight="102.0" prefWidth="169.0" text="SQL Scripts" />
+                  <Button mnemonicParsing="false" onAction="#changeToEmployee" prefHeight="102.0" prefWidth="168.0" text="Employee Order Menu" />
                </children>
             </VBox>
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="104.0" text="Log Out" />
          </children>
       </VBox>
       <Label layoutX="483.0" layoutY="14.0" text="Admin Menu">

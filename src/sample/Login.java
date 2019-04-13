@@ -65,7 +65,7 @@ public class Login implements Initializable{
                     System.out.println("Will add later");
                     System.out.println("Logged in as employee");
                     break;
-                } else if(validUsername.equals(user_Text.getText())) {
+                } else if(!validUsername.equals(user_Text.getText())) {
                     incorrectLogin_Label.setVisible(true);
                     incorrectLogin_Label.setText(userDoesNotExist);
                     System.out.println(userDoesNotExist);
