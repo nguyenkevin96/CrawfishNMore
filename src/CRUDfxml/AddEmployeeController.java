@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 import sample.DbConnection;
 import sample.Staff;
 
@@ -60,8 +61,10 @@ public class AddEmployeeController implements Initializable {
                         pst.setString(1, empFirstName_Text.getText());
                         pst.setString(2, empLastName_Text.getText());
                         pst.setInt(3, name);
-                        pst.setInt(4, employeeRole.getSelectionModel().getSelectedIndex());
+                        pst.setInt(4, employeeRole.getSelectionModel().getSelectedIndex()+1);
                         pst.executeUpdate();
+                        Stage close = (Stage)addEmployee_Button.getScene().getWindow();
+                        close.close();
                     } catch (SQLException ex){
                         System.out.println("Insert staff failed");
                     }

@@ -1,11 +1,14 @@
 package sample;
 
-import CRUDfxml.AddEmployeeController;
+import CRUDfxml.EditEmployeeController;
+import CRUDfxml.editProductController;
+import com.sun.javafx.iio.ios.IosDescriptor;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
@@ -29,14 +32,14 @@ public class AdminMenu implements Initializable {
     private Connection conn = null;
     Main main = new Main();
 
-    public ObservableList<Staff> loginData;
-    public ObservableList<Inventory> recentOrders;
+    private ObservableList<Staff> loginData;
+    private ObservableList<Inventory> recentOrders;
 
     public ListView<String> employee_List, adminManager_List, recentRec_List;
 
-    public List<String> tempEmployee, tempAdmin, tempRecentRecieve;
+    private List<String> tempEmployee, tempAdmin, tempRecentRecieve;
 
-    public ObservableList<String> currEmployeeList, currAdminList, currRecentRecieved;
+    private ObservableList<String> currEmployeeList, currAdminList, currRecentRecieved;
 
     public TableView<Staff> loginTableView;
     public TableView<Inventory> recentOrderTableView;
@@ -45,7 +48,7 @@ public class AdminMenu implements Initializable {
     public TableColumn<Supplier, String> suppliername_Column, productname_Column, currentamt_Column, requiredamt_Column;
 
     @Override
-    public void initialize(URL url, ResourceBundle rb){
+    public void initialize(URL url, ResourceBundle rb) {
         conn = DbConnection.dbConnection();
         loginData = FXCollections.observableArrayList();
         recentOrders = FXCollections.observableArrayList();
@@ -60,7 +63,7 @@ public class AdminMenu implements Initializable {
     }
 
     public void inventoryManagementClicked(ActionEvent event) throws Exception{
-        main.changeWindow(event, "/sample/InventoryManagement.fxml", 581, 498);
+        main.changeWindow(event, "/sample/InventoryManagement.fxml", 478, 575);
     }
 
     public void handleEmployeeManager(ActionEvent event) throws Exception{
@@ -68,8 +71,9 @@ public class AdminMenu implements Initializable {
     }
 
     private void addEmployeeListData(){
+        tempEmployee.clear();
         try{
-            String sql = "SELECT staff.staff_id, staff.firstName, staff.lastName FROM staff";
+            String sql = "SELECT staff.staff_id, staff.firstName, staff.lastName FROM staff WHERE permtype_id = 3";
             stmt = conn.createStatement();
             rs = stmt.executeQuery(sql);
             while(rs.next()){
@@ -84,6 +88,7 @@ public class AdminMenu implements Initializable {
     }
 
     private void addAdminListData(){
+        tempAdmin.clear();
         try{
             pst = conn.prepareStatement("SELECT staff.staff_id, staff.firstName, staff.lastName " +
                     "FROM staff WHERE staff.permtype_id = 1 OR staff.permtype_id = 2");
@@ -110,7 +115,8 @@ public class AdminMenu implements Initializable {
         requiredamt_Column.setCellValueFactory(new PropertyValueFactory<>("requiredP"));
     }
 
-    private void loadLoginData(){
+    public void loadLoginData(){
+        loginData.clear();
         try{
             pst = conn.prepareStatement("SELECT firstName, lastName, login.username, permtype.perm_desc " +
                     "FROM staff " +
@@ -131,6 +137,12 @@ public class AdminMenu implements Initializable {
             ex.printStackTrace();
         }
         loginTableView.setItems(loginData);
+    }
+
+    public void refreshTables(){
+        loadLoginData();
+        addAdminListData();
+        addEmployeeListData();
     }
 
     private void addRecentReceivedData() {
@@ -163,25 +175,57 @@ public class AdminMenu implements Initializable {
     public void handleAddEmployee(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/CRUDfxml/AddEmployee.fxml"));
         Parent parent = loader.load();
-//        AddEmployeeController controller = loader.getController();
-//        controller.addDataToController(loginTableView.getSelectionModel().getSelectedItem());
         Stage window = new Stage();
         window.setTitle("Add Employee");
         window.setScene(new Scene(parent));
         window.show();
     }
 
-    /*private void handleEditEmployee(String location) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource(location));
+    public void handleEditEmployee() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/CRUDfxml/EditEmployee.fxml"));
         Parent parent = loader.load();
 
-        editProduct controller = loader.getController();
-
-        controller.addDataToController(staff.getSelectionModel().getSelectedItem());
+        EditEmployeeController controller = loader.getController();
+        controller.addDataToController(loginTableView.getSelectionModel().getSelectedItem());
 
         Stage window = new Stage();
         window.setTitle("Edit Employee");
         window.setScene(new Scene(parent));
         window.show();
-    }*/
+    }
+
+    public void handleEditProduct() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/CRUDfxml/EditProduct.fxml"));
+        Parent parent = loader.load();
+
+        editProductController controller = loader.getController();
+        controller.addDataToController(recentOrderTableView.getSelectionModel().getSelectedItem());
+
+        Stage window = new Stage();
+        window.setTitle("Edit Product");
+        window.setScene(new Scene(parent));
+        window.show();
+    }
+
+    public void handleDeleteEmployee(){
+        Staff emp = loginTableView.getSelectionModel().getSelectedItem();
+        String name = emp.getUsername();
+        try{
+            pst = conn.prepareStatement("SELECT login_id FROM login WHERE username = (?)");
+            pst.setString(1, name);
+            rs = pst.executeQuery();
+            while(rs.next()){
+                int id = rs.getInt("login_id");
+                try{
+                    pst = conn.prepareStatement("DELETE FROM staff WHERE staff_id = (?)");
+                    pst.setInt(1, id);
+                    pst.executeUpdate();
+                } catch (SQLException ex){
+                    System.out.println("NO!");
+                }
+            }
+        } catch (SQLException ex){
+            ex.printStackTrace();
+        }
+    }
 }

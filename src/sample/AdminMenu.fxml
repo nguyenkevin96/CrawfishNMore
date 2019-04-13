@@ -29,7 +29,7 @@
                <children>
                   <Button fx:id="inventoryManagement_Button" mnemonicParsing="false" onAction="#inventoryManagementClicked" prefHeight="89.0" prefWidth="169.0" text="Inventory Management" textAlignment="CENTER" wrapText="true" />
                   <Button fx:id="employeeManager_Button" mnemonicParsing="false" onAction="#handleEmployeeManager" prefHeight="89.0" prefWidth="169.0" text="Employee Manager" textAlignment="CENTER" wrapText="true" />
-                  <Button mnemonicParsing="false" prefHeight="89.0" prefWidth="169.0" text="SQL Injection" />
+                  <Button mnemonicParsing="false" prefHeight="89.0" prefWidth="169.0" text="SQL Scripts" />
                   <Button mnemonicParsing="false" prefHeight="89.0" prefWidth="169.0" text="Placeholder" />
                   <Button mnemonicParsing="false" onAction="#changeToEmployee" prefHeight="89.0" prefWidth="168.0" text="Employee Order Menu" />
                </children>
@@ -72,8 +72,8 @@
             <ContextMenu>
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#handleAddEmployee" text="Add" />
-                  <MenuItem mnemonicParsing="false" text="Edit" />
-                  <MenuItem mnemonicParsing="false" text="Delete" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleEditEmployee" text="Edit" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleDeleteEmployee" text="Delete" />
               </items>
             </ContextMenu>
          </contextMenu>
@@ -83,8 +83,9 @@
             <TableColumn fx:id="suppliername_Column" prefWidth="95.0" text="Supplier" />
           <TableColumn fx:id="productname_Column" prefWidth="93.0" text="Product" />
           <TableColumn fx:id="currentamt_Column" prefWidth="77.0" text="Curr. Amt" />
-            <TableColumn fx:id="requiredamt_Column" prefWidth="72.0" text="Req. Amt" />
+            <TableColumn fx:id="requiredamt_Column" prefWidth="75.0" text="Req. Amt" />
         </columns>
       </TableView>
+      <Button layoutX="979.0" layoutY="111.0" mnemonicParsing="false" onAction="#refreshTables" text="Refresh" />
    </children>
 </AnchorPane>

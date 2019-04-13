@@ -39,8 +39,8 @@ public class Inventory {
         return currentP;
     }
 
-    public void setCurrentP(double currentProd) {
-        this.currentP = currentProd;
+    public void setCurrentP(double currentP) {
+        this.currentP = currentP;
     }
 
     public double getRequiredP() {
@@ -49,5 +49,10 @@ public class Inventory {
 
     public void setRequiredP(double requiredP) {
         this.requiredP = requiredP;
+    }
+
+    @Override
+    public String toString(){
+        return "Supplier: " + supplierName + "\nProduct: " + productName + "\nCurrent: " + currentP + "\nRequired: " + requiredP;
     }
 }

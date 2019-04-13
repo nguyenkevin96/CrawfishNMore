@@ -33,7 +33,7 @@ CREATE TABLE status
 (
   status_id   INT IDENTITY(1,1)  NOT NULL PRIMARY KEY,
   login_id    INT                NOT NULL,
-  status_desc varchar(10)        NOT NULL,
+  status_desc varchar(20)        NOT NULL,
   FOREIGN KEY(login_id) REFERENCES login(login_id)
 );
 
@@ -119,7 +119,7 @@ CREATE TABLE sales
   menuItem_id   INT                NOT NULL,
   location_id   INT                NOT NULL,
   redemption_id INT                NOT NULL,
-  billTotal     INT                NOT NULL,
+  billTotal     DECIMAL(5, 2)      NOT NULL,
   rewardPoints  INT                NOT NULL,
   FOREIGN KEY (employee_id) REFERENCES employee (employee_id),
   FOREIGN KEY (customer_id) REFERENCES customer (customer_id),
@@ -149,7 +149,7 @@ CREATE TABLE pointsRedemption
 CREATE TABLE admin
 (
   admin_id      INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-  staff_id INT NOT NULL,
+  staff_id      INT NOT NULL,
   FOREIGN KEY (staff_id) REFERENCES staff (staff_id)
 );
 
@@ -209,7 +209,7 @@ CREATE TABLE orderDetails
   orderDetail_id INT    NOT NULL IDENTITY(1,1) PRIMARY KEY,
   product_id     INT    NOT NULL,
   quantity       INT    NOT NULL,
-  unitPrice      INT    NOT NULL,
+  unitPrice      decimal(5, 2)    NOT NULL,
   paymentStatus  INT    NOT NULL,
   discount       INT    NOT NULL,
   FOREIGN KEY (product_id) REFERENCES product (product_id)
@@ -264,8 +264,8 @@ CREATE TABLE inventory
 (
   inventory_id    INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
   product_id      INT                NOT NULL,
-  currentProdAmt  INT                NOT NULL,
-  requiredProdAmt INT                NOT NULL,
+  currentProdAmt  DECIMAL(4, 1)                NOT NULL,
+  requiredProdAmt DECIMAL(4, 1)                NOT NULL,
   FOREIGN KEY (product_id) REFERENCES product (product_id)
 );
 
@@ -345,9 +345,6 @@ INSERT INTO product (supplier_id, productName, productPrice) VALUES (2, 'Blue Cr
 INSERT INTO product (supplier_id, productName, productPrice) VALUES (2, 'Fish Tail', 7.29);
 INSERT INTO product (supplier_id, productName, productPrice) VALUES (2, 'Fish Head', 8.29);
 INSERT INTO product (supplier_id, productName, productPrice) VALUES (2, 'Fish Body', 19.29);
-
-INSERT INTO menu (menu_id, menuName) VALUES (1, 'Seasonal');
-INSERT INTO menu (menu_id, menuName) VALUES (2, 'NonSeasonal');
 
 INSERT INTO inventory (product_id, currentProdAmt, requiredProdAmt) VALUES (2, 5, 9);
 INSERT INTO inventory (product_id, currentProdAmt, requiredProdAmt) VALUES (3, 3, 9);
