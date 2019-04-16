@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Log Out Button">
-      <change afterPath="$PROJECT_DIR$/src/CRUDfxml/CustomSQL.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CRUDfxml/CustomSQLController.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Update">
+      <change afterPath="$PROJECT_DIR$/src/sample/MenuItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/5d336b2c-4859-4f92-935d-b071e5c7ead0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5d336b2c-4859-4f92-935d-b071e5c7ead0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/5d336b2c-4859-4f92-935d-b071e5c7ead0/storage_v2/_src_/database/crawfish.vbTdZg/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5d336b2c-4859-4f92-935d-b071e5c7ead0/storage_v2/_src_/database/crawfish.vbTdZg/schema/dbo.sYMBAA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CRUDfxml/AddEmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CRUDfxml/AddEmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/InventoryManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/InventoryManagement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/InventoryManagement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CrawfishNMore/sample/InventoryManagement.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CRUDfxml/CustomSQL.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/CRUDfxml/CustomSQL.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CRUDfxml/CustomSQLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CRUDfxml/CustomSQLController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CRUDfxml/addProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/CRUDfxml/addProduct.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CRUDfxml/addProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CRUDfxml/addProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CRUDfxml/editProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/CRUDfxml/editProduct.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CRUDfxml/editProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CRUDfxml/editProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/AdminMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/AdminMenu.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/AdminMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/AdminMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/InventoryManagement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/InventoryManagement.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/InventoryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/InventoryManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/sqlfiles/DatabaseFiller.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sqlfiles/DatabaseFiller.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/tsvfiles/menu_items.csv" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,46 +66,6 @@
         <item name="crawfish: database" type="ccb7ac2a:MsImplModel$Database" />
         <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="crawfish@172.26.54.36" type="feb32156:DbDataSourceImpl" />
-        <item name="crawfish: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="admin: table" type="63ab2ba1:MsImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="crawfish@172.26.54.36" type="feb32156:DbDataSourceImpl" />
-        <item name="crawfish: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="emergencyContact: table" type="63ab2ba1:MsImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="crawfish@172.26.54.36" type="feb32156:DbDataSourceImpl" />
-        <item name="crawfish: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="inventory: table" type="63ab2ba1:MsImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="crawfish@172.26.54.36" type="feb32156:DbDataSourceImpl" />
-        <item name="crawfish: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="product: table" type="63ab2ba1:MsImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="crawfish@172.26.54.36" type="feb32156:DbDataSourceImpl" />
-        <item name="crawfish: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="suppliers: table" type="63ab2ba1:MsImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -154,10 +122,71 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CRUDfxml/EditEmployee.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CRUDfxml/editProduct.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/AdminMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="223" column="68" lean-forward="true" selection-start-line="223" selection-start-column="68" selection-end-line="223" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/login.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/InventoryManagement.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CRUDfxml/CustomSQL.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/sqlfiles/DatabaseFiller.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="364" column="31" lean-forward="true" selection-start-line="364" selection-start-column="31" selection-end-line="364" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/admin">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CRUDfxml/CustomSQLController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+            <state relative-caret-position="383">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,72 +195,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/staff">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CRUDfxml/AddEmployee.fxml">
-          <provider selected="true" editor-type-id="text-editor" />
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CRUDfxml/AddEmployeeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/emergencyContact">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/product">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/suppliers">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/sqlfiles/DatabaseFiller.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5780">
-              <caret line="340" column="4" selection-start-line="340" selection-end-line="341" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CRUDfxml/EditEmployeeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/sample/AdminMenu.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -273,7 +239,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1042083a-31f5-42a4-8174-bce0b687b00c/console.sql" />
         <option value="$PROJECT_DIR$/src/sample/DatabaseConnection.java" />
         <option value="$PROJECT_DIR$/src/sample/Connection.java" />
         <option value="$PROJECT_DIR$/src/sample/Menu.java" />
@@ -291,7 +256,6 @@
         <option value="$PROJECT_DIR$/src/DatabaseFiller.sql" />
         <option value="$PROJECT_DIR$/src/sample/Product.java" />
         <option value="$PROJECT_DIR$/src/sample/MenuProduct.java" />
-        <option value="$PROJECT_DIR$/src/sample/login.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Employee.java" />
         <option value="$PROJECT_DIR$/src/sample/DbConnection.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
@@ -309,21 +273,23 @@
         <option value="$PROJECT_DIR$/src/CRUDfxml/deleteProduct.fxml" />
         <option value="$PROJECT_DIR$/src/sample/editProduct.fxml" />
         <option value="$PROJECT_DIR$/src/CRUDfxml/EditEmployeeController.java" />
-        <option value="$PROJECT_DIR$/src/CRUDfxml/addProductController.java" />
-        <option value="$PROJECT_DIR$/src/CRUDfxml/addProduct.fxml" />
-        <option value="$PROJECT_DIR$/src/CRUDfxml/editProduct.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/InventoryManagement.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/InventoryManagement.java" />
         <option value="$PROJECT_DIR$/src/sample/Inventory.java" />
-        <option value="$PROJECT_DIR$/src/CRUDfxml/editProductController.java" />
         <option value="$PROJECT_DIR$/src/sample/Login.java" />
-        <option value="$PROJECT_DIR$/src/sample/AdminMenu.java" />
-        <option value="$PROJECT_DIR$/src/sample/AdminMenu.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/login.fxml" />
+        <option value="$PROJECT_DIR$/src/CRUDfxml/AddEmployeeController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/CRUDfxml/addProduct.fxml" />
+        <option value="$PROJECT_DIR$/src/CRUDfxml/addProductController.java" />
+        <option value="$PROJECT_DIR$/src/sample/InventoryManagement.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/MenuItem.java" />
+        <option value="$PROJECT_DIR$/src/CRUDfxml/editProduct.fxml" />
+        <option value="$PROJECT_DIR$/src/CRUDfxml/editProductController.java" />
+        <option value="$PROJECT_DIR$/src/sample/InventoryManagement.java" />
+        <option value="$PROJECT_DIR$/src/CRUDfxml/CustomSQLController.java" />
         <option value="$PROJECT_DIR$/src/CRUDfxml/CustomSQL.fxml" />
         <option value="$PROJECT_DIR$/src/sample/sqlfiles/DatabaseFiller.sql" />
-        <option value="$PROJECT_DIR$/src/CRUDfxml/CustomSQLController.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/src/CRUDfxml/AddEmployeeController.java" />
+        <option value="$PROJECT_DIR$/src/sample/AdminMenu.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/AdminMenu.java" />
       </list>
     </option>
   </component>
@@ -335,9 +301,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1808" />
+    <option name="x" value="181" />
+    <option name="y" value="25" />
+    <option name="width" value="1333" />
     <option name="height" value="888" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -566,7 +532,11 @@
       <workItem from="1555103866205" duration="13436000" />
       <workItem from="1555125926368" duration="892000" />
       <workItem from="1555173604862" duration="9733000" />
-      <workItem from="1555186012827" duration="3447000" />
+      <workItem from="1555186012827" duration="6271000" />
+      <workItem from="1555376805670" duration="877000" />
+      <workItem from="1555379943144" duration="3696000" />
+      <workItem from="1555438553158" duration="5056000" />
+      <workItem from="1555451684911" duration="6547000" />
     </task>
     <task id="LOCAL-00001" summary="Completed edit(right-click) and Add Product for Inventory.&#10;Added refresh button Inventory">
       <created>1553495800836</created>
@@ -596,18 +566,39 @@
       <option name="project" value="LOCAL" />
       <updated>1555166475389</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="SQL Injector finished (Working on fixing Crud buttons)">
+      <created>1555190754051</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1555190754051</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update">
+      <created>1555190933867</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1555190933867</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update">
+      <created>1555193526146</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1555193526146</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232666000" />
+    <option name="totallyTimeSpent" value="251666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16809882" />
-      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info active="true" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.1970999" />
+      <window_info id="Structure" order="1" weight="0.24973147" />
       <window_info id="Favorites" order="2" weight="0.32996845" />
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -616,20 +607,20 @@
       <window_info anchor="bottom" id="Floobits" order="0" weight="0.10695743" />
       <window_info anchor="bottom" id="SQL Generator" order="1" weight="0.32917964" />
       <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.3271028" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.15096481" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.39875388" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32690126" />
+      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.27922815" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.3984109" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Application Servers" order="9" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32917964" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3291714" />
       <window_info anchor="bottom" id="Problems" order="11" />
       <window_info anchor="bottom" id="Changes" order="12" />
       <window_info anchor="bottom" id="Profiler" order="13" />
       <window_info anchor="bottom" id="Event Log" order="14" weight="0.17366628" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.20431328" />
-      <window_info anchor="bottom" id="Database Console" order="16" weight="0.21793416" />
+      <window_info anchor="bottom" id="Database Console" order="16" weight="0.26220205" />
       <window_info anchor="bottom" id="Docker" order="17" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="18" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="19" weight="0.32690126" />
@@ -637,7 +628,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
       <window_info anchor="right" id="JetGradle" order="2" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.15413533" />
-      <window_info anchor="right" id="Database" order="4" sideWeight="0.498452" visible="true" weight="0.17615467" />
+      <window_info anchor="right" id="Database" order="4" sideWeight="0.498452" visible="true" weight="0.20461869" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="right" id="Maven" order="7" weight="0.32984003" />
@@ -698,136 +689,175 @@
     <MESSAGE value="Updated SQl Script" />
     <MESSAGE value="For Steven" />
     <MESSAGE value="Log Out Button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Log Out Button" />
+    <MESSAGE value="SQL Injector finished (Working on fixing Crud buttons)" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/InventoryManagement.fxml">
-      <provider editor-type-id="text-editor" />
+    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/emergencyContact" />
+    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/login" />
+    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/supplierBill" />
+    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/suppliers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/product">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/tsvfiles/menu_items.csv" />
+    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/inventory">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/mealStatus">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/sales">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/rewards">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/staff">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/employee">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/javafx-sdk-11.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="3105" column="15" selection-start-line="3105" selection-start-column="15" selection-end-line="3105" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/EmployeeManager_Manager.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/InventoryManagement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/DbConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="32" selection-start-line="16" selection-start-column="12" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="374">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/AdminMenu.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="30" column="98" selection-start-line="30" selection-start-column="98" selection-end-line="30" selection-end-column="98" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/sample/sqlfiles/DatabaseFillerMySQL.sql">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/AdminMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="229" column="5" selection-start-line="229" selection-start-column="5" selection-end-line="229" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/status">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CRUDfxml/CustomSQL.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="17" column="113" selection-start-line="17" selection-start-column="113" selection-end-line="17" selection-end-column="113" />
+    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/storeLocation">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/deliveryHistory" />
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/admin_menu" />
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/emergencyContact" />
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/category" />
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/suppliers" />
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/employee" />
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/customer" />
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/login" />
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/staff" />
-    <entry file="uml://DATABASE/5d336b2c-4859-4f92-935d-b071e5c7ead0.DATABASE:crawfish">
+    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/loginLog">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/5d336b2c-4859-4f92-935d-b071e5c7ead0.SCHEMA:crawfish.dbo">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>DATABASE</ID>
-          <OriginalElement>5d336b2c-4859-4f92-935d-b071e5c7ead0.DATABASE:crawfish</OriginalElement>
+          <OriginalElement>5d336b2c-4859-4f92-935d-b071e5c7ead0.SCHEMA:crawfish.dbo</OriginalElement>
           <nodes>
-            <node x="2205.849494949495" y="865.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.inventory</node>
-            <node x="2605.9083333333333" y="596.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.supplierEmployee</node>
-            <node x="0.0" y="878.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.mealStatus</node>
-            <node x="489.0" y="878.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.rewards</node>
-            <node x="2391.724494949495" y="382.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.loginLog</node>
+            <node x="1645.0" y="583.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orders</node>
+            <node x="2638.4083333333333" y="596.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.supplierEmployee</node>
+            <node x="890.8750000000001" y="409.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.menu</node>
+            <node x="785.75" y="583.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.menuItems</node>
+            <node x="2400.7396464646463" y="191.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.status</node>
+            <node x="2424.7396464646463" y="382.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.loginLog</node>
             <node x="200.0" y="865.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.emergencyContact</node>
-            <node x="2219.849494949495" y="1110.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.category</node>
-            <node x="2327.224494949495" y="0.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.login</node>
+            <node x="2252.3646464646463" y="1110.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.category</node>
+            <node x="2360.2396464646463" y="0.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.login</node>
             <node x="0.0" y="1269.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.sysdiagrams</node>
-            <node x="831.9744949494949" y="13.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.permtype</node>
-            <node x="2104.599494949495" y="382.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.suppliers</node>
-            <node x="858.3749999999999" y="409.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.menu</node>
-            <node x="2072.988888888889" y="596.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.product</node>
-            <node x="759.7499999999999" y="811.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.sales</node>
-            <node x="1803.8494949494948" y="892.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orderdetails_product</node>
-            <node x="485.0" y="1110.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.pointsRedemption</node>
-            <node x="1215.8494949494948" y="892.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.storeLocation_supplier</node>
-            <node x="1588.8494949494948" y="892.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.supplierBill</node>
-            <node x="1612.5" y="583.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orders</node>
-            <node x="508.25" y="583.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.customer</node>
-            <node x="2367.724494949495" y="191.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.status</node>
-            <node x="1011.2499999999999" y="624.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.admin_menu</node>
-            <node x="2000.8494949494948" y="838.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orderDetails</node>
-            <node x="1152.25" y="623.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.storeLocation</node>
-            <node x="2471.849494949495" y="892.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.supplier_product</node>
-            <node x="879.9744949494949" y="164.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.staff</node>
-            <node x="2715.9083333333333" y="409.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.discounts</node>
-            <node x="1365.3032828282828" y="409.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.admin</node>
-            <node x="753.2499999999999" y="583.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.menuItems</node>
-            <node x="217.87045454545478" y="610.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.employee</node>
-            <node x="1426.8494949494948" y="878.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.deliveryHistory</node>
+            <node x="848.2396464646465" y="13.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.permtype</node>
+            <node x="2137.1146464646463" y="382.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.suppliers</node>
+            <node x="0.0" y="878.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.mealStatus</node>
+            <node x="2104.413131313131" y="596.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.product</node>
+            <node x="769.7499999999998" y="811.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.sales</node>
+            <node x="1836.3646464646465" y="892.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orderdetails_product</node>
+            <node x="517.5000000000001" y="1110.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.pointsRedemption</node>
+            <node x="2238.3646464646463" y="865.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.inventory</node>
+            <node x="1621.3646464646465" y="892.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.supplierBill</node>
+            <node x="540.7500000000001" y="583.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.customer</node>
+            <node x="1043.75" y="624.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.admin_menu</node>
+            <node x="2033.3646464646465" y="838.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orderDetails</node>
+            <node x="1184.75" y="623.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.storeLocation</node>
+            <node x="489.0" y="878.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.rewards</node>
+            <node x="2504.3646464646463" y="892.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.supplier_product</node>
+            <node x="1248.3646464646465" y="892.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.storeLocation_supplier</node>
+            <node x="896.2396464646465" y="164.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.staff</node>
+            <node x="2748.4083333333333" y="409.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.discounts</node>
+            <node x="1397.848737373737" y="409.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.admin</node>
+            <node x="217.90075757575755" y="610.0">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.employee</node>
+            <node x="1459.3646464646465" y="878.5">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.deliveryHistory</node>
           </nodes>
           <notes />
           <edges>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.mealStatus" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.employee">
               <point x="0.0" y="-57.0" />
               <point x="90.0" y="791.0" />
-              <point x="242.0371212121213" y="791.0" />
+              <point x="242.06742424242407" y="791.0" />
               <point x="-48.333333333333485" y="57.0" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.deliveryHistory" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orders">
               <point x="35.5" y="-57.0" />
-              <point x="1533.3494949494948" y="791.0" />
-              <point x="1637.833333333333" y="791.0" />
+              <point x="1565.8646464646465" y="791.0" />
+              <point x="1670.3333333333333" y="791.0" />
               <point x="-50.66666666666674" y="84.0" />
-            </edge>
-            <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.supplier_product" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.product">
-              <point x="-37.25" y="-43.0" />
-              <point x="2509.099494949495" y="781.0" />
-              <point x="2258.488888888889" y="781.0" />
-              <point x="79.5" y="70.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.loginLog" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.status">
               <point x="0.0" y="-70.5" />
@@ -835,20 +865,26 @@
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.product" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.suppliers">
               <point x="0.0" y="-70.5" />
-              <point x="2178.988888888889" y="563.0" />
-              <point x="2211.099494949495" y="563.0" />
+              <point x="2214.413131313131" y="563.0" />
+              <point x="2243.6146464646463" y="563.0" />
               <point x="0.0" y="70.5" />
+            </edge>
+            <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.supplier_product" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.product">
+              <point x="-37.25" y="-43.0" />
+              <point x="2541.6146464646463" y="781.0" />
+              <point x="2296.913131313131" y="781.0" />
+              <point x="82.5" y="70.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orders" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.suppliers">
               <point x="38.0" y="-84.0" />
-              <point x="1726.5" y="563.0" />
-              <point x="2168.499494949495" y="563.0" />
+              <point x="1759.0" y="563.0" />
+              <point x="2201.0146464646464" y="563.0" />
               <point x="-42.60000000000002" y="70.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orderdetails_product" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orders">
-              <point x="-44.25" y="-43.0" />
-              <point x="1848.0994949494948" y="791.0" />
-              <point x="1739.1666666666665" y="791.0" />
+              <point x="-44.250000000000114" y="-43.0" />
+              <point x="1880.6146464646463" y="791.0" />
+              <point x="1771.6666666666667" y="791.0" />
               <point x="50.66666666666674" y="84.0" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.staff" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.permtype">
@@ -856,37 +892,37 @@
               <point x="0.0" y="43.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.sales" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.employee">
-              <point x="-67.5" y="-124.5" />
-              <point x="782.2499999999999" y="781.0" />
-              <point x="338.70378787878826" y="781.0" />
+              <point x="-80.99999999999977" y="-124.5" />
+              <point x="796.75" y="781.0" />
+              <point x="338.73409090909104" y="781.0" />
               <point x="48.333333333333485" y="57.0" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orderdetails_product" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.product">
-              <point x="44.25" y="-43.0" />
-              <point x="1936.5994949494948" y="781.0" />
-              <point x="2099.488888888889" y="781.0" />
-              <point x="-79.5" y="70.5" />
-            </edge>
-            <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.supplier_product" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.suppliers">
-              <point x="37.25" y="-43.0" />
-              <point x="2583.599494949495" y="563.0" />
-              <point x="2253.6994949494947" y="563.0" />
-              <point x="42.59999999999991" y="70.5" />
+              <point x="44.249999999999886" y="-43.0" />
+              <point x="1969.1146464646463" y="781.0" />
+              <point x="2131.913131313131" y="781.0" />
+              <point x="-82.5" y="70.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.category" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.inventory">
               <point x="0.0" y="-57.0" />
               <point x="0.0" y="70.5" />
             </edge>
+            <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.supplier_product" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.suppliers">
+              <point x="37.25" y="-43.0" />
+              <point x="2616.1146464646463" y="563.0" />
+              <point x="2286.2146464646466" y="563.0" />
+              <point x="42.60000000000002" y="70.5" />
+            </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orderDetails" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.product">
               <point x="0.0" y="-97.5" />
-              <point x="2093.349494949495" y="791.0" />
-              <point x="2152.488888888889" y="791.0" />
-              <point x="-26.5" y="70.5" />
+              <point x="2125.8646464646463" y="791.0" />
+              <point x="2186.913131313131" y="791.0" />
+              <point x="-27.5" y="70.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.storeLocation_supplier" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.storeLocation">
               <point x="-47.75" y="-43.0" />
-              <point x="1263.5994949494948" y="791.0" />
-              <point x="1270.25" y="791.0" />
+              <point x="1296.1146464646465" y="791.0" />
+              <point x="1302.75" y="791.0" />
               <point x="0.0" y="43.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.pointsRedemption" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.rewards">
@@ -895,14 +931,14 @@
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.employee" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.staff">
               <point x="0.0" y="-57.0" />
-              <point x="290.3704545454548" y="357.0" />
-              <point x="926.4744949494949" y="357.0" />
+              <point x="290.40075757575755" y="357.0" />
+              <point x="942.7396464646465" y="357.0" />
               <point x="-46.5" y="84.0" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.admin_menu" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.menu">
               <point x="-30.25" y="-43.0" />
-              <point x="1041.5" y="563.0" />
-              <point x="1006.1249999999999" y="563.0" />
+              <point x="1074.0" y="563.0" />
+              <point x="1038.625" y="563.0" />
               <point x="49.25" y="43.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.rewards" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.customer">
@@ -914,25 +950,25 @@
               <point x="46.0" y="57.0" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.sales" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.customer">
-              <point x="-22.5" y="-124.5" />
-              <point x="827.2499999999999" y="771.0" />
-              <point x="677.0" y="771.0" />
+              <point x="-26.999999999999773" y="-124.5" />
+              <point x="850.75" y="771.0" />
+              <point x="709.5000000000001" y="771.0" />
               <point x="56.25" y="84.0" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.inventory" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.product">
               <point x="0.0" y="-70.5" />
-              <point x="2328.849494949495" y="791.0" />
-              <point x="2205.488888888889" y="791.0" />
-              <point x="26.5" y="70.5" />
+              <point x="2361.3646464646463" y="791.0" />
+              <point x="2241.913131313131" y="791.0" />
+              <point x="27.5" y="70.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.sales" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.menuItems">
-              <point x="22.5" y="-124.5" />
+              <point x="27.000000000000227" y="-124.5" />
               <point x="0.0" y="84.0" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.sales" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.storeLocation">
-              <point x="67.5" y="-124.5" />
-              <point x="917.2499999999999" y="791.0" />
-              <point x="1191.583333333333" y="791.0" />
+              <point x="81.00000000000023" y="-124.5" />
+              <point x="958.75" y="791.0" />
+              <point x="1224.0833333333333" y="791.0" />
               <point x="-78.66666666666674" y="43.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.supplierEmployee" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.discounts">
@@ -941,246 +977,220 @@
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orders" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.admin">
               <point x="-38.0" y="-84.0" />
-              <point x="1650.5" y="543.0" />
-              <point x="1456.0532828282828" y="543.0" />
+              <point x="1683.0" y="543.0" />
+              <point x="1488.598737373737" y="543.0" />
               <point x="30.25" y="43.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.supplierEmployee" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.suppliers">
               <point x="-61.5" y="-70.5" />
-              <point x="2667.4083333333333" y="553.0" />
-              <point x="2296.299494949495" y="553.0" />
+              <point x="2699.9083333333333" y="553.0" />
+              <point x="2328.8146464646466" y="553.0" />
               <point x="85.19999999999993" y="70.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.storeLocation_supplier" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.suppliers">
               <point x="47.75" y="-43.0" />
-              <point x="1359.0994949494948" y="791.0" />
-              <point x="1498.125" y="791.0" />
-              <point x="1498.125" y="553.0" />
-              <point x="2125.899494949495" y="553.0" />
+              <point x="1391.6146464646465" y="791.0" />
+              <point x="1530.625" y="791.0" />
+              <point x="1530.625" y="553.0" />
+              <point x="2158.4146464646465" y="553.0" />
               <point x="-85.20000000000005" y="70.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.emergencyContact" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.employee">
               <point x="0.0" y="-70.5" />
               <point x="334.5" y="791.0" />
-              <point x="290.3704545454548" y="791.0" />
+              <point x="290.40075757575755" y="791.0" />
               <point x="0.0" y="57.0" />
-            </edge>
-            <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.deliveryHistory" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.storeLocation">
-              <point x="-35.5" y="-57.0" />
-              <point x="1462.3494949494948" y="781.0" />
-              <point x="1348.9166666666665" y="781.0" />
-              <point x="78.66666666666674" y="43.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.staff" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.login">
               <point x="46.5" y="-84.0" />
-              <point x="1019.4744949494949" y="139.0" />
-              <point x="2373.224494949495" y="139.0" />
+              <point x="1035.7396464646465" y="139.0" />
+              <point x="2406.2396464646463" y="139.0" />
               <point x="-46.0" y="57.0" />
+            </edge>
+            <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.deliveryHistory" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.storeLocation">
+              <point x="-35.5" y="-57.0" />
+              <point x="1494.8646464646465" y="781.0" />
+              <point x="1381.4166666666667" y="781.0" />
+              <point x="78.66666666666674" y="43.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.supplierBill" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orders">
               <point x="0.0" y="-43.5" />
-              <point x="1686.3494949494948" y="791.0" />
-              <point x="1688.5" y="791.0" />
+              <point x="1718.8646464646465" y="791.0" />
+              <point x="1721.0" y="791.0" />
               <point x="0.0" y="84.0" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.admin_menu" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.admin">
               <point x="30.25" y="-43.0" />
-              <point x="1102.0" y="563.0" />
-              <point x="1395.5532828282828" y="563.0" />
+              <point x="1134.5" y="563.0" />
+              <point x="1428.098737373737" y="563.0" />
               <point x="-30.25" y="43.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.menuItems" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.menu">
-              <point x="0.0" y="-84.0" />
-              <point x="872.2499999999999" y="563.0" />
-              <point x="907.6249999999999" y="563.0" />
+              <point x="2.2737367544323206E-13" y="-84.0" />
+              <point x="904.7500000000002" y="563.0" />
+              <point x="940.1250000000001" y="563.0" />
               <point x="-49.25" y="43.5" />
             </edge>
             <edge source="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.admin" target="5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.staff">
               <point x="0.0" y="-43.5" />
-              <point x="1425.8032828282828" y="357.0" />
-              <point x="1019.4744949494949" y="357.0" />
+              <point x="1458.348737373737" y="357.0" />
+              <point x="1035.7396464646465" y="357.0" />
               <point x="46.5" y="84.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.7520933424845572" x="977.0" y="455.0" />
-          <SelectedNodes />
+          <settings layout="Hierarchic Group" zoom="0.7630748112560056" x="1813.5169994603345" y="294.51699946033455" />
+          <SelectedNodes>
+            <node>5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.deliveryHistory</node>
+          </SelectedNodes>
           <Categories>
             <Category>Key columns</Category>
             <Category>Columns</Category>
           </Categories>
-          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/admin" />
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/inventory" />
-    <entry file="file://$PROJECT_DIR$/src/sample/sqlfiles/DatabaseFiller.sql">
+    <entry file="file://$PROJECT_DIR$/src/CRUDfxml/AddEmployeeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5780">
-          <caret line="340" column="4" selection-start-line="340" selection-end-line="341" />
+        <state relative-caret-position="-102">
+          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/MenuItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CRUDfxml/EditEmployeeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+        <state relative-caret-position="417">
+          <caret line="65" column="40" lean-forward="true" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/staff">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/staff">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/staff">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CRUDfxml/CustomSQLController.java">
+    <entry file="file://$PROJECT_DIR$/src/CRUDfxml/addProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+        <state relative-caret-position="357">
+          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="52" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/admin">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/admin">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/admin">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/staff">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/staff">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/admin">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/admin">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/suppliers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/suppliers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/suppliers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/suppliers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/suppliers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/suppliers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/suppliers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/product">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/suppliers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/suppliers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CRUDfxml/AddEmployee.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/menuItems">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/editProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/EmployeeManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/InventoryManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CRUDfxml/editProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/SQLinjectionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/SQLinjection.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CRUDfxml/addProduct.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="160" selection-start-line="10" selection-start-column="160" selection-end-line="10" selection-end-column="160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CRUDfxml/EditEmployee.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CRUDfxml/editProduct.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CRUDfxml/CustomSQLController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CRUDfxml/CustomSQL.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/orderDetails">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sqlfiles/DatabaseFiller.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="364" column="31" lean-forward="true" selection-start-line="364" selection-start-column="31" selection-end-line="364" selection-end-column="31" />
+        </state>
+      </provider>
     </entry>
     <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/admin">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -1189,94 +1199,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/emergencyContact">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/sample/AdminMenu.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/login.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/emergencyContact">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/sample/InventoryManagement.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/emergencyContact">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/5d336b2c-4859-4f92-935d-b071e5c7ead0">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>5d336b2c-4859-4f92-935d-b071e5c7ead0</OriginalElement>
-          <nodes>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orders</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.supplierEmployee</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.menuItems</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.rewards</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.loginLog</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.emergencyContact</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.category</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.login</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.sysdiagrams</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.permtype</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.suppliers</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.menu</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.product</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.sales</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orderdetails_product</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.pointsRedemption</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.storeLocation_supplier</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.supplierBill</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.customer</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.status</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.mealStatus</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.admin_menu</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.orderDetails</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.storeLocation</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.supplier_product</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.staff</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.inventory</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.discounts</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.admin</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.employee</node>
-            <node x="" y="">5d336b2c-4859-4f92-935d-b071e5c7ead0.TABLE:crawfish.dbo.deliveryHistory</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.8" x="1193.125" y="404.375" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/staff">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5d336b2c-4859-4f92-935d-b071e5c7ead0/database/crawfish/schema/dbo/table/staff">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CRUDfxml/AddEmployeeController.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/AdminMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
-          <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+          <caret line="223" column="68" lean-forward="true" selection-start-line="223" selection-start-column="68" selection-end-line="223" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -1338,7 +1280,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -62,49 +62,49 @@ public class AdminMenu implements Initializable {
         loginSupplierTableViewCellData();
     }
 
-    public void inventoryManagementClicked(ActionEvent event) throws Exception{
-        main.changeWindow(event, "/sample/InventoryManagement.fxml", 478, 575);
+    public void inventoryManagementClicked(ActionEvent event) throws Exception {
+        main.changeWindow(event, "/sample/InventoryManagement.fxml", 593, 575);
     }
 
-    public void handleEmployeeManager(ActionEvent event) throws Exception{
+    public void handleEmployeeManager(ActionEvent event) throws Exception {
         main.changeWindow(event, "/sample/EmployeeManager_Manager.fxml", 766, 396);
     }
 
-    private void addEmployeeListData(){
+    private void addEmployeeListData() {
         tempEmployee.clear();
-        try{
+        try {
             String sql = "SELECT staff.staff_id, staff.firstName, staff.lastName FROM staff WHERE permtype_id = 3";
             stmt = conn.createStatement();
             rs = stmt.executeQuery(sql);
-            while(rs.next()){
+            while (rs.next()) {
                 String name = rs.getInt("staff_id") + "\t" + rs.getString("firstName") + " " + rs.getString("lastName");
                 tempEmployee.add(name);
             }
             currEmployeeList = FXCollections.observableArrayList(tempEmployee);
             employee_List.setItems(currEmployeeList);
-        } catch (SQLException ex){
+        } catch (SQLException ex) {
             ex.printStackTrace();
         }
     }
 
-    private void addAdminListData(){
+    private void addAdminListData() {
         tempAdmin.clear();
-        try{
+        try {
             pst = conn.prepareStatement("SELECT staff.staff_id, staff.firstName, staff.lastName " +
                     "FROM staff WHERE staff.permtype_id = 1 OR staff.permtype_id = 2");
             rs = pst.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
                 String name = rs.getInt("staff_id") + "\t" + rs.getString("firstName") + " " + rs.getString("lastName");
                 tempAdmin.add(name);
             }
             currAdminList = FXCollections.observableArrayList(tempAdmin);
             adminManager_List.setItems(currAdminList);
-        } catch (SQLException ex){
+        } catch (SQLException ex) {
             ex.printStackTrace();
         }
     }
 
-    private void loginSupplierTableViewCellData(){
+    private void loginSupplierTableViewCellData() {
         firstname_Column.setCellValueFactory(new PropertyValueFactory<>("firstname"));
         lastname_Column.setCellValueFactory(new PropertyValueFactory<>("lastname"));
         username_Column.setCellValueFactory(new PropertyValueFactory<>("username"));
@@ -115,9 +115,9 @@ public class AdminMenu implements Initializable {
         requiredamt_Column.setCellValueFactory(new PropertyValueFactory<>("requiredP"));
     }
 
-    public void loadLoginData(){
+    public void loadLoginData() {
         loginData.clear();
-        try{
+        try {
             pst = conn.prepareStatement("SELECT firstName, lastName, login.username, permtype.perm_desc " +
                     "FROM staff " +
                     "INNER JOIN login " +
@@ -125,7 +125,7 @@ public class AdminMenu implements Initializable {
                     "INNER JOIN permtype " +
                     "ON staff.permtype_id = permtype.permType_id");
             rs = pst.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
                 loginData.add(new Staff(
                         rs.getString("firstname"),
                         rs.getString("lastname"),
@@ -133,13 +133,13 @@ public class AdminMenu implements Initializable {
                         rs.getString("perm_desc")
                 ));
             }
-        } catch (SQLException ex){
+        } catch (SQLException ex) {
             ex.printStackTrace();
         }
         loginTableView.setItems(loginData);
     }
 
-    public void refreshTables(){
+    public void refreshTables() {
         loadLoginData();
         addAdminListData();
         addEmployeeListData();
@@ -154,21 +154,21 @@ public class AdminMenu implements Initializable {
                     "INNER JOIN suppliers " +
                     "on product.supplier_id = suppliers.supplier_id");
             rs = pst.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
                 recentOrders.add(new Inventory(
-                   rs.getString("supplierName"),
-                   rs.getString("productName"),
-                   rs.getDouble("currentProdAmt"),
-                   rs.getDouble("requiredProdAmt")
+                        rs.getString("supplierName"),
+                        rs.getString("productName"),
+                        rs.getDouble("currentProdAmt"),
+                        rs.getDouble("requiredProdAmt")
                 ));
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
-    recentOrderTableView.setItems(recentOrders);
+        recentOrderTableView.setItems(recentOrders);
     }
 
-    public void changeToEmployee(ActionEvent event){
+    public void changeToEmployee(ActionEvent event) {
         /*main.changeWindow(event);*/
     }
 
@@ -194,43 +194,34 @@ public class AdminMenu implements Initializable {
         window.show();
     }
 
-    public void handleEditProduct() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/CRUDfxml/EditProduct.fxml"));
-        Parent parent = loader.load();
-
-        editProductController controller = loader.getController();
-        controller.addDataToController(recentOrderTableView.getSelectionModel().getSelectedItem());
-
-        Stage window = new Stage();
-        window.setTitle("Edit Product");
-        window.setScene(new Scene(parent));
-        window.show();
-    }
-
-    public void handleDeleteEmployee(){
+    public void handleDeleteEmployee() {
         Staff emp = loginTableView.getSelectionModel().getSelectedItem();
         String name = emp.getUsername();
-        try{
+        try {
             pst = conn.prepareStatement("SELECT login_id FROM login WHERE username = (?)");
             pst.setString(1, name);
             rs = pst.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
                 int id = rs.getInt("login_id");
-                try{
+                try {
                     pst = conn.prepareStatement("DELETE FROM staff WHERE staff_id = (?)");
                     pst.setInt(1, id);
                     pst.executeUpdate();
-                } catch (SQLException ex){
+                } catch (SQLException ex) {
                     System.out.println("NO!");
                 }
             }
-        } catch (SQLException ex){
+        } catch (SQLException ex) {
             ex.printStackTrace();
         }
         loadLoginData();
     }
 
-    public void changeCustomSQL(ActionEvent event) throws IOException{
+    public void changeCustomSQL(ActionEvent event) throws IOException {
         main.changeWindow(event, "/CRUDfxml/CustomSQL.fxml", 600, 509);
+    }
+
+    public void handleLogOut(ActionEvent event) throws IOException {
+        main.changeWindow(event, "/sample/login.fxml", 420, 280);
     }
 }

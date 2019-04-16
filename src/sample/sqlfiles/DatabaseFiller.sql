@@ -118,9 +118,9 @@ CREATE TABLE sales
   customer_id   INT                NOT NULL,
   menuItem_id   INT                NOT NULL,
   location_id   INT                NOT NULL,
-  redemption_id INT                NOT NULL,
+  redemption_id INT,
   billTotal     DECIMAL(5, 2)      NOT NULL,
-  rewardPoints  INT                NOT NULL,
+  rewardPoints  DECIMAL(4, 4)      NOT NULL,
   FOREIGN KEY (employee_id) REFERENCES employee (employee_id),
   FOREIGN KEY (customer_id) REFERENCES customer (customer_id),
   FOREIGN KEY (location_id) REFERENCES storeLocation (location_id),
@@ -131,8 +131,8 @@ CREATE TABLE sales
 CREATE TABLE rewards
 (
   reward_id    INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
-  customer_id  INT                NOT NULL,
-  rewardPoints INT                NOT NULL,
+  customer_id  INT               NOT NULL,
+  rewardPoints DECIMAL(4, 4)     NOT NULL,
   FOREIGN KEY (customer_id) REFERENCES customer (customer_id)
 );
 
@@ -198,7 +198,7 @@ CREATE TABLE product
 (
   product_id   INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
   supplier_id  INT                NOT NULL,
-  productName  VARCHAR(25)        NOT NULL,
+  productName  VARCHAR(225)        NOT NULL,
   productPrice DECIMAL(4, 2)       NOT NULL,
   FOREIGN KEY (supplier_id) REFERENCES suppliers (supplier_id)
 );
@@ -338,26 +338,46 @@ BULK INSERT crawfish.dbo.customer
       FIRSTROW = 2
   )
 
-INSERT INTO admin (staff_id) SELECT staff_id FROM staff WHERE permType_id = 1 OR permType_id = 2;
+BULK INSERT crawfish.dbo.product
+    FROM 'C:\Product.tsv'
+    WITH(
+        FIELDTERMINATOR = '\t',
+        ROWTERMINATOR = '\n',
+        FIRSTROW = 2
+      )
+
+BULK INSERT crawfish.dbo.rewards
+    FROM 'C:\Rewards.tsv'
+    WITH(
+    FIELDTERMINATOR = '\t',
+    ROWTERMINATOR = '\n',
+    FIRSTROW = 2
+    )
+
+BULK INSERT crawfish.dbo.sales
+    FROM 'C:\Sales.tsv'
+    WITH(
+    FIELDTERMINATOR = '\t',
+    ROWTERMINATOR = '\n',
+    FIRSTROW = 2
+    )
+
+BULK INSERT crawfish.dbo.status
+    FROM 'C:\Status.tsv'
+    WITH(
+    FIELDTERMINATOR = '\t',
+    ROWTERMINATOR = '\n',
+    FIRSTROW = 2
+  )
+
+BULK INSERT crawfish.dbo.loginLog
+    FROM 'C:\loginLog.tsv'
+    WITH(
+    FIELDTERMINATOR = '\t',
+    ROWTERMINATOR = '\n',
+    FIRSTROW = 2
+  )
 
 INSERT INTO suppliers (admin_id, supplier_status, supplierName) VALUES (1, 1, 'Fish Market');
 INSERT INTO suppliers (admin_id, supplier_status, supplierName) VALUES (1, 1, 'Crab Market');
 INSERT INTO suppliers (admin_id, supplier_status, supplierName) VALUES (1, 1, 'Crawfish Market');
-
-INSERT INTO product (supplier_id, productName, productPrice) VALUES (3, 'Crawfish', 10.29);
-INSERT INTO product (supplier_id, productName, productPrice) VALUES (3, 'Crawfish L', 2.29);
-INSERT INTO product (supplier_id, productName, productPrice) VALUES (3, 'Crawfish R', 2.29);
-INSERT INTO product (supplier_id, productName, productPrice) VALUES (3, 'Crawfish T', 2.29);
-INSERT INTO product (supplier_id, productName, productPrice) VALUES (2, 'Blue Crab', 5.29);
-INSERT INTO product (supplier_id, productName, productPrice) VALUES (2, 'Blue Crab L', 5.29);
-INSERT INTO product (supplier_id, productName, productPrice) VALUES (2, 'Blue Crab R', 5.29);
-INSERT INTO product (supplier_id, productName, productPrice) VALUES (2, 'Blue Crab Head', 5.29);
-INSERT INTO product (supplier_id, productName, productPrice) VALUES (2, 'Fish Tail', 7.29);
-INSERT INTO product (supplier_id, productName, productPrice) VALUES (2, 'Fish Head', 8.29);
-INSERT INTO product (supplier_id, productName, productPrice) VALUES (2, 'Fish Body', 19.29);
-
-INSERT INTO inventory (product_id, currentProdAmt, requiredProdAmt) VALUES (2, 5, 9);
-INSERT INTO inventory (product_id, currentProdAmt, requiredProdAmt) VALUES (3, 3, 9);
-INSERT INTO inventory (product_id, currentProdAmt, requiredProdAmt) VALUES (5, 2, 9);
-INSERT INTO inventory (product_id, currentProdAmt, requiredProdAmt) VALUES (1, 1, 9);
-INSERT INTO inventory (product_id, currentProdAmt, requiredProdAmt) VALUES (4, 8, 9);

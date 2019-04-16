@@ -4,11 +4,14 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.util.Callback;
 import sample.DbConnection;
+import sample.Main;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
 import java.util.ResourceBundle;
@@ -18,6 +21,7 @@ public class CustomSQLController implements Initializable {
     private PreparedStatement pst = null;
     private Statement stmt = null;
     private ResultSet rs = null;
+    Main main = new Main();
 
     public TextArea customSQL_TextA;
 
@@ -78,4 +82,7 @@ public class CustomSQLController implements Initializable {
         }
     }
 
+    public void handleDone(ActionEvent event) throws IOException {
+        main.changeWindow(event, "/sample/AdminMenu.fxml", 1068, 615);
+    }
 }

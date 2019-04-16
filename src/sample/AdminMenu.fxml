@@ -33,7 +33,7 @@
                   <Button mnemonicParsing="false" onAction="#changeToEmployee" prefHeight="102.0" prefWidth="168.0" text="Employee Order Menu" />
                </children>
             </VBox>
-            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="104.0" text="Log Out" />
+            <Button fx:id="logout_Button" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="31.0" prefWidth="104.0" text="Log Out" />
          </children>
       </VBox>
       <Label layoutX="483.0" layoutY="14.0" text="Admin Menu">

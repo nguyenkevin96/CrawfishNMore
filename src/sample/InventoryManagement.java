@@ -23,16 +23,16 @@ public class InventoryManagement implements Initializable {
     PreparedStatement pst = null;
     ResultSet rs = null;
 
-    public ObservableList<Inventory> data;
+    public ObservableList<MenuItem> data;
 
     public Button refresh_Button;
 
     Main main = new Main();
 
     @FXML
-    private TableView<Inventory> productList;
+    private TableView<MenuItem> productList;
 
-    public  TableColumn<?, ?> supplierName_Column, productname_Column, currentProd_Column, requiredProd_Column;
+    public  TableColumn<?, ?> menuItemName_Column, menuType_Column, price_Column, description_Column;
 
     @Override
     public void initialize(URL url, ResourceBundle rB){
@@ -44,28 +44,23 @@ public class InventoryManagement implements Initializable {
     }
 
     private void setCellValue(){
-        supplierName_Column.setCellValueFactory(new PropertyValueFactory<>("supplierName"));
-        productname_Column.setCellValueFactory(new PropertyValueFactory<>("productName"));
-        currentProd_Column.setCellValueFactory(new PropertyValueFactory<>("currentP"));
-        requiredProd_Column.setCellValueFactory(new PropertyValueFactory<>("requiredP"));
+        menuItemName_Column.setCellValueFactory(new PropertyValueFactory<>("menuItemN"));
+        menuType_Column.setCellValueFactory(new PropertyValueFactory<>("menuType"));
+        price_Column.setCellValueFactory(new PropertyValueFactory<>("menuItemP"));
+        description_Column.setCellValueFactory(new PropertyValueFactory<>("menuItemD"));
     }
 
     public void loadDataFromDatabase(){
         data.clear();
         try {
-            pst = conn.prepareStatement("SELECT suppliers.supplierName, product.productName, inventory.currentProdAmt, inventory.requiredProdAmt " +
-                    "FROM inventory " +
-                    "INNER JOIN product " +
-                    "ON inventory.product_id = product.product_id " +
-                    "INNER JOIN suppliers " +
-                    "ON product.supplier_id = suppliers.supplier_id");
+            pst = conn.prepareStatement("SELECT menuItemName, menu_id, menuItemPrice, menuItemDesc FROM menuItems");
             rs = pst.executeQuery();
             while(rs.next()){
-                data.add(new Inventory(
-                        rs.getString("supplierName"),
-                        rs.getString("productName"),
-                        rs.getDouble("currentProdAmt"),
-                        rs.getDouble("currentProdAmt")
+                data.add(new MenuItem(
+                        rs.getString("menuItemName"),
+                        rs.getInt("menu_id"),
+                        rs.getDouble("menuItemPrice"),
+                        rs.getString("menuItemDesc")
                 ));
             }
         } catch (SQLException e) {
@@ -101,46 +96,13 @@ public class InventoryManagement implements Initializable {
     }
 
     public void handleDeleteProduct(){
-        Inventory in = productList.getSelectionModel().getSelectedItem();
-        System.out.println(in);
-    }
-
-    /*@FXML
-    private void handleAddProduct(){
-        Date date = Date.valueOf(productdate_Date.getValue());
-        data.clear();
         try{
-            pst = conn.prepareStatement("INSERT INTO product(product_name, product_desc, quantity, productDate) " +
-                    "VALUES (?, ?, ?, ?)");
-            pst.setString(1, productname_Text.getText());
-            pst.setString(2, productdesc_TextA.getText());
-            pst.setString(3, productquantity_Text.getText());
-            pst.setDate(4, date);
+            pst = conn.prepareStatement("DELETE FROM menuItems WHERE menuItemName = ?");
+            pst.setString(1, productList.getSelectionModel().getSelectedItem().getMenuItemN());
             pst.executeUpdate();
-            System.out.println("Added Successfully");
         } catch (SQLException ex){
             ex.printStackTrace();
         }
         loadDataFromDatabase();
     }
-
-    @FXML
-    private void handleRefresh(){
-        loadDataFromDatabase();
-    }
-
-    @FXML
-    private void loadEditProduct(ActionEvent event) throws IOException{
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("editProduct.fxml"));
-        Parent parent = loader.load();
-
-        editProduct controller = loader.getController();
-
-        controller.addDataToController(productList.getSelectionModel().getSelectedItem());
-
-        Stage window = new Stage();
-        window.setTitle("Edit Employee");
-        window.setScene(new Scene(parent));
-        window.show();
-    }*/
 }

@@ -18,5 +18,6 @@
       <Button fx:id="customSQL_Button" layoutX="413.0" layoutY="132.0" mnemonicParsing="false" onAction="#handleCustomSQL" text="Go" />
       <TableView fx:id="customSQLTableView" layoutX="47.0" layoutY="254.0" prefHeight="231.0" prefWidth="517.0" />
       <Label fx:id="customSQL_Label" alignment="CENTER" layoutX="42.0" layoutY="222.0" prefHeight="21.0" prefWidth="517.0" text="Label" visible="false" />
+      <Button layoutX="513.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleDone" text="Back" />
    </children>
 </AnchorPane>
