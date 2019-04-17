@@ -1,5 +1,6 @@
 package sample;
 
+import com.ibatis.common.jdbc.ScriptRunner;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -8,10 +9,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
+import java.io.*;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 public class Main extends Application {
+    public Connection conn = null;
 
     @Override
     public void start(Stage primaryStage) throws Exception{

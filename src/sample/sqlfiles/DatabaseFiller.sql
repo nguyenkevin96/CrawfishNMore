@@ -378,6 +378,7 @@ BULK INSERT crawfish.dbo.loginLog
     FIRSTROW = 2
   )
 
+
 INSERT INTO suppliers (admin_id, supplier_status, supplierName) VALUES (1, 1, 'Fish Market');
 INSERT INTO suppliers (admin_id, supplier_status, supplierName) VALUES (1, 1, 'Crab Market');
 INSERT INTO suppliers (admin_id, supplier_status, supplierName) VALUES (1, 1, 'Crawfish Market');

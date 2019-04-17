@@ -1,5 +1,6 @@
 package sample;
 
+import com.ibatis.common.jdbc.ScriptRunner;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,6 +11,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.URL;
 import java.sql.*;
 import java.util.ResourceBundle;
@@ -79,5 +83,15 @@ public class Login implements Initializable{
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+    }
+
+    public void addSQL(ActionEvent event) throws IOException, ClassNotFoundException, SQLException {
+        Connection conn = DbConnection.dbConnection();
+        ScriptRunner scriptRunner = new ScriptRunner(conn, false, false);
+        InputStreamReader reader = new InputStreamReader(new FileInputStream("DatabaseFiller.sql"));
+        scriptRunner.runScript(reader);
+        reader.close();
+        conn.close();
     }
 }
