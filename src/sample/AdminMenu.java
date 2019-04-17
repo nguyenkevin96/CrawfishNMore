@@ -152,7 +152,8 @@ public class AdminMenu implements Initializable {
                     "INNER JOIN product " +
                     "ON inventory.product_id = product.product_id " +
                     "INNER JOIN suppliers " +
-                    "on product.supplier_id = suppliers.supplier_id");
+                    "on product.supplier_id = suppliers.supplier_id " +
+                    "ORDER BY inventory_id DESC");
             rs = pst.executeQuery();
             while (rs.next()) {
                 recentOrders.add(new Inventory(
@@ -168,8 +169,8 @@ public class AdminMenu implements Initializable {
         recentOrderTableView.setItems(recentOrders);
     }
 
-    public void changeToEmployee(ActionEvent event) {
-        /*main.changeWindow(event);*/
+    public void changeToEmployee(ActionEvent event) throws IOException{
+        main.changeWindow(event, "/sameple/EmployeeManager_Manager.fxml", 766, 396);
     }
 
     public void handleAddEmployee(ActionEvent event) throws IOException {
