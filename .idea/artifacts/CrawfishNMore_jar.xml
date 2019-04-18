@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CrawfishNMore:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CrawfishNMore_jar</output-path>
+    <root id="archive" name="CrawfishNMore.jar">
+      <element id="module-output" name="CrawfishNMore" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Libraries/sqljdbc_7.2/enu/mssql-jdbc-7.2.2.jre11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Libraries/ibatis-2.3.4.726.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/javafx-sdk-11.0.2/lib/src.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/javafx-sdk-11.0.2/lib/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/javafx-sdk-11.0.2/lib/javafx.web.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/javafx-sdk-11.0.2/lib/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/javafx-sdk-11.0.2/lib/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/javafx-sdk-11.0.2/lib/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/javafx-sdk-11.0.2/lib/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/javafx-sdk-11.0.2/lib/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/javafx-sdk-11.0.2/lib/javafx.graphics.jar" path-in-jar="/" />
+      <element id="library" level="project" name="mssql-jdbc-7.2.2.jre11" />
+      <element id="library" level="project" name="lib" />
+      <element id="library" level="project" name="ibatis-2.3.4.726" />
+    </root>
+  </artifact>
+</component>
