@@ -3,13 +3,8 @@ package sample;
 import com.ibatis.common.jdbc.ScriptRunner;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.stage.Stage;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -17,6 +12,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.sql.*;
 import java.util.ResourceBundle;
+
 public class Login implements Initializable{
     final private String incorrectUserOrPass = "Incorrect username or password";
     final private String userDoesNotExist = "Username does not exist";
@@ -81,7 +77,9 @@ public class Login implements Initializable{
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setContentText("Login doesn't exist");
+            alert.showAndWait();
         }
 
     }
