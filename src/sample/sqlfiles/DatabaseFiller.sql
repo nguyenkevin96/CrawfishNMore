@@ -159,7 +159,7 @@ CREATE TABLE suppliers
   supplier_id     INT         NOT NULL IDENTITY(1,1) PRIMARY KEY,
   admin_id        INT         NOT NULL,
   supplier_status INT         NOT NULL,
-  supplierName    VARCHAR(25) NOT NULL
+  supplierName    VARCHAR(225) NOT NULL
 );
 
 -- Table 16 --
@@ -331,7 +331,7 @@ BULK INSERT crawfish.dbo.staff
   )
 
 BULK INSERT crawfish.dbo.customer
-    FROM 'C:\customer.tsv'
+    FROM 'C:\Customer.tsv'
     WITH(
       FIELDTERMINATOR = '\t',
       ROWTERMINATOR = '\n',
@@ -378,6 +378,61 @@ BULK INSERT crawfish.dbo.loginLog
     FIRSTROW = 2
   )
 
+BULK INSERT crawfish.dbo.emergencyContact
+  FROM 'C:\EmergencyContact.tsv'
+  WITH(
+  FIELDTERMINATOR = '\t',
+  ROWTERMINATOR = '\n',
+  FIRSTROW = 2
+  )
+
+BULK INSERT crawfish.dbo.employee
+  FROM 'C:\Employee.tsv'
+  WITH(
+  FIELDTERMINATOR = '\t',
+  ROWTERMINATOR = '\n',
+  FIRSTROW = 2
+  )
+
+BULK INSERT crawfish.dbo.inventory
+  FROM 'C:\Inventory.tsv'
+  WITH(
+  FIELDTERMINATOR = '\t',
+  ROWTERMINATOR = '\n',
+  FIRSTROW = 2
+  )
+
+BULK INSERT crawfish.dbo.mealStatus
+  FROM 'C:\MealStatus.tsv'
+  WITH(
+  FIELDTERMINATOR = '\t',
+  ROWTERMINATOR = '\n',
+  FIRSTROW = 2
+  )
+
+BULK INSERT crawfish.dbo.supplier_product
+  FROM 'C:\OneHundred.tsv'
+  WITH(
+  FIELDTERMINATOR = '\t',
+  ROWTERMINATOR = '\n',
+  FIRSTROW = 2
+  )
+
+BULK INSERT crawfish.dbo.suppliers
+  FROM 'C:\Supplier.tsv'
+  WITH(
+  FIELDTERMINATOR = '\t',
+  ROWTERMINATOR = '\n',
+  FIRSTROW = 2
+  )
+
+BULK INSERT crawfish.dbo.supplierEmployee
+  FROM 'C:\SupplierEmployee.tsv'
+  WITH(
+  FIELDTERMINATOR = '\t',
+  ROWTERMINATOR = '\n',
+  FIRSTROW = 2
+  )
 
 INSERT INTO suppliers (admin_id, supplier_status, supplierName) VALUES (1, 1, 'Fish Market');
 INSERT INTO suppliers (admin_id, supplier_status, supplierName) VALUES (1, 1, 'Crab Market');
