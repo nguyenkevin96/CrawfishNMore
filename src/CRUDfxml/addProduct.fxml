@@ -18,11 +18,11 @@
       <TextField fx:id="menuItemName_Text" layoutX="123.0" layoutY="126.0" prefHeight="31.0" prefWidth="164.0" promptText="Menu Item Name" />
       <TextField fx:id="price_Text" layoutX="123.0" layoutY="173.0" prefHeight="31.0" prefWidth="70.0" promptText="\$" />
         <Button fx:id="save_Button" layoutX="117.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="41.0" prefWidth="81.0" text="Save" />
-        <Label layoutX="33.0" layoutY="78.0" text="Menu Item:" />
+        <Label layoutX="33.0" layoutY="131.0" text="Menu Item:" />
         <Label layoutX="34.0" layoutY="221.0" text="Desciption:" />
       <Label layoutX="71.0" layoutY="178.0" text="Price:" />
       <TextArea fx:id="menuItemDesc_TextA" layoutX="123.0" layoutY="221.0" prefHeight="95.0" prefWidth="164.0" promptText="Menu Item Description" wrapText="true" />
-      <Label layoutX="32.0" layoutY="131.0" text="Menu Type:" />
-      <ComboBox fx:id="menuType_Combo" layoutX="123.0" layoutY="73.0" prefHeight="31.0" prefWidth="121.0" />
+      <Label layoutX="32.0" layoutY="78.0" text="Menu Type:" />
+      <ComboBox fx:id="menuType_Combo" layoutX="123.0" layoutY="73.0" prefHeight="31.0" prefWidth="121.0" promptText="Menu Type" />
     </children>
 </AnchorPane>
